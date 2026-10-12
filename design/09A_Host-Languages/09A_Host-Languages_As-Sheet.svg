@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 09A Host Languages – As Sheet (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Scrim -->
+<rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.32"/><rect class="hit" data-hit="scrim" x="0" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#FFFFFF">9:41</text>
+<g fill="#FFFFFF"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#FFFFFF" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#FFFFFF"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- BottomSheet (frosted) -->
+<path d="M0 83 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFF4D6" filter="url(#sh-lg)"/>
+<path d="M0 83 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFFFFF" fill-opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<rect class="hit" data-hit="sheet" x="0" y="59" width="390" height="785" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="175" y="67" width="40" height="4" rx="2" fill="#D8DDE5"/>
+<text x="24" y="107.3" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">Which languages can you</text>
+<text x="24" y="141.3" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">speak?</text>
+<text x="24" y="174.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Pick up to 8. Callers use this to find you.</text>
+<!-- Input (empty) -->
+<rect x="24" y="205" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 223.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+<text x="72" y="239.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">Search languages</text>
+<rect class="hit" data-hit="input:Search languages" x="24" y="205" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="291" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">3 of 8 selected</text>
+<!-- Multi-select chips (same component as 06) --><rect x="24" y="308" width="66" height="40" rx="20.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><text x="56.9" y="333.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">Hindi</text><rect class="hit" data-hit="chip:Hindi" x="24" y="308" width="66" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="98" y="308" width="82" height="40" rx="20.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><text x="138.9" y="333.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">English</text><rect class="hit" data-hit="chip:English" x="98" y="308" width="82" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="188" y="308" width="90" height="40" rx="20.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><text x="233.0" y="333.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">Kannada</text><rect class="hit" data-hit="chip:Kannada" x="188" y="308" width="90" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="286" y="308" width="70" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="321.1" y="333.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Tamil</text><rect class="hit" data-hit="chip:Tamil" x="286" y="308" width="70" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="360" width="78" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="62.9" y="385.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Telugu</text><rect class="hit" data-hit="chip:Telugu" x="24" y="360" width="78" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="110" y="360" width="83" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="151.5" y="385.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Marathi</text><rect class="hit" data-hit="chip:Marathi" x="110" y="360" width="83" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="201" y="360" width="82" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="241.9" y="385.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Bengali</text><rect class="hit" data-hit="chip:Bengali" x="201" y="360" width="82" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="412" width="105" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="76.5" y="437.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Malayalam</text><rect class="hit" data-hit="chip:Malayalam" x="24" y="412" width="105" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="137" y="412" width="86" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="179.8" y="437.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Gujarati</text><rect class="hit" data-hit="chip:Gujarati" x="137" y="412" width="86" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="231" y="412" width="83" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="272.6" y="437.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Punjabi</text><rect class="hit" data-hit="chip:Punjabi" x="231" y="412" width="83" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="464" width="63" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="55.6" y="489.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Urdu</text><rect class="hit" data-hit="chip:Urdu" x="24" y="464" width="63" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="95" y="464" width="62" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="125.9" y="489.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Odia</text><rect class="hit" data-hit="chip:Odia" x="95" y="464" width="62" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="165" y="464" width="102" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="216.2" y="489.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Assamese</text><rect class="hit" data-hit="chip:Assamese" x="165" y="464" width="102" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="275" y="464" width="86" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="317.9" y="489.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Konkani</text><rect class="hit" data-hit="chip:Konkani" x="275" y="464" width="86" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="516" width="88" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="68.2" y="541.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Bhojpuri</text><rect class="hit" data-hit="chip:Bhojpuri" x="24" y="516" width="88" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="120" y="516" width="104" height="40" rx="20.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="172.2" y="541.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Rajasthani</text><rect class="hit" data-hit="chip:Rajasthani" x="120" y="516" width="104" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Bottom action area -->
+<!-- Button primary: "Save" → save + close sheet, return to 24 / 26 -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="25" y="739" width="340" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Save</text>
+<rect class="hit" data-hit="btn:Save" x="24" y="738" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

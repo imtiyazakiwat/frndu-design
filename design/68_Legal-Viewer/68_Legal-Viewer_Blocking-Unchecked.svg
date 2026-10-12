@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 68 Legal Viewer – Blocking Unchecked (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c68"><rect x="0" y="106" width="390" height="544"/></clipPath>
+<g clip-path="url(#c68)"><g transform="translate(0 0)">
+<!-- PersistentBanner (info) -->
+<rect x="24" y="115" width="342" height="62" rx="16" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="24" y="115" width="342" height="62" rx="16" fill="#EAF0FF" opacity="0.7"/>
+<g transform="translate(40 136.0) scale(0.8333)" fill="none" stroke="#5B7CFA" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></g>
+<text x="72" y="140.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">We've updated our Terms. Please read and</text>
+<text x="72" y="159.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">accept to keep using Frndu.</text>
+<text x="24" y="215" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">Terms of Service</text>
+<text x="24" y="241" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Version 3.2 · Effective 1 Oct 2026</text>
+<!-- SegmentedTabs (frosted track) -->
+<rect x="24" y="257" width="160" height="40" rx="20.0" fill="#FFFFFF" fill-opacity="0.5" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="28.0" y="261" width="76.0" height="32" rx="16.0" fill="#FFFFFF" filter="url(#sh-sm)"/>
+<text x="66.0" y="282.0" text-anchor="middle" font-size="14" font-weight="600" fill="#5B7CFA" xml:space="preserve">English</text>
+<rect class="hit" data-hit="lang:English" x="28" y="257" width="76" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<text x="142.0" y="282.0" text-anchor="middle" font-size="14" font-weight="600" fill="#66758A" font-family="'Noto Sans Devanagari', 'Kohinoor Devanagari', sans-serif" xml:space="preserve">हिन्दी</text>
+<rect class="hit" data-hit="lang:हिन्दी" x="104" y="257" width="76" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="286" y="257" width="80" height="40" rx="12" fill="#FFFFFF" stroke="#EEF1F5"/><text x="306" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#10233F" xml:space="preserve">A</text><text x="342" y="283" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">A</text><rect class="hit" data-hit="textsize:small" x="286" y="253" width="40" height="48" fill="#FFFFFF" fill-opacity="0"/><rect class="hit" data-hit="textsize:large" x="326" y="253" width="40" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="330.8" text-anchor="start" font-size="17" font-weight="700" fill="#10233F" xml:space="preserve">1. Who can use Frndu</text>
+<text x="24" y="358.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">You must be 18 or older to use Frndu. We verify</text>
+<text x="24" y="380.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">hosts with a video check before they can take</text>
+<text x="24" y="402.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">calls.</text>
+<text x="24" y="446.8" text-anchor="start" font-size="17" font-weight="700" fill="#10233F" xml:space="preserve">2. Your account</text>
+<text x="24" y="474.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Keep your phone number up to date. You are</text>
+<text x="24" y="496.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">responsible for activity on your account.</text>
+<text x="24" y="540.8" text-anchor="start" font-size="17" font-weight="700" fill="#10233F" xml:space="preserve">3. Diamonds and payments</text>
+<text x="24" y="568.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Diamonds are a virtual currency used for calls</text>
+<text x="24" y="590.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">and chat. Diamonds have no cash value for users</text>
+<text x="24" y="612.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">and are non-refundable except as stated in the</text>
+<text x="24" y="634.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Refund Policy.</text>
+<text x="24" y="678.8" text-anchor="start" font-size="17" font-weight="700" fill="#10233F" xml:space="preserve">4. Community rules</text>
+<text x="24" y="706.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Be respectful. No nudity, harassment, fraud, or</text>
+<text x="24" y="728.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">sharing of personal contact details. We may end</text>
+<text x="24" y="750.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">calls, issue strikes, or suspend accounts that</text>
+<text x="24" y="772.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">break these rules.</text>
+<text x="24" y="816.8" text-anchor="start" font-size="17" font-weight="700" fill="#10233F" xml:space="preserve">5. Hosts</text>
+<text x="24" y="844.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Hosts earn diamonds from calls after the</text>
+<text x="24" y="866.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">platform commission. Payouts need completed</text>
+<text x="24" y="888.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">KYC.</text>
+</g></g>
+<rect x="0" y="714" width="390" height="130" fill="#FFFFFF"/>
+<!-- Bottom action area -->
+<!-- Button disabled: "Accept & Continue" → logs acceptance → app -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="#D8DDE5"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Accept &amp; Continue</text><rect x="0" y="650" width="390" height="72" fill="#FFFFFF"/><!-- Checkbox 24 in 48x48 touch area -->
+<rect x="16" y="662" width="48" height="48" rx="12" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="28.75" y="674.75" width="22.5" height="22.5" rx="8" fill="#FFFFFF" stroke="#9AA6B5" stroke-width="1.5"/>
+<rect class="hit" data-hit="checkbox" x="16" y="662" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/><text x="64" y="687.2" text-anchor="start" font-size="15" font-weight="400" fill="#10233F" xml:space="preserve">I have read and agree to the updated</text>
+<text x="64" y="709.2" text-anchor="start" font-size="15" font-weight="400" fill="#10233F" xml:space="preserve">Terms of Service.</text>
+<!-- TopBar (shared component, owner: Girish) y 47-103 --><text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Updated Terms</text><rect x="0" y="103" width="390" height="3" fill="#E2E7EF"/><rect x="0" y="103" width="180" height="3" fill="#5B7CFA"/>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

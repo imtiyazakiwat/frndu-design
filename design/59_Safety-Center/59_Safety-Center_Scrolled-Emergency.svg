@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 59 Safety Center – Scrolled Emergency (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c59"><rect x="0" y="103" width="390" height="619"/></clipPath>
+<g clip-path="url(#c59)"><g transform="translate(0 -1040)">
+<rect x="24" y="115" width="342" height="128" rx="20" fill="#EAF0FF"/>
+<ellipse cx="320" cy="179" rx="54" ry="44" fill="#FFFFFF" opacity="1.0" transform="rotate(0 320 179)"/>
+<g transform="translate(296 155) scale(2.0000)" fill="none" stroke="#5B7CFA" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></g>
+<text x="44" y="153.0" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Your safety comes first</text><text x="44" y="178.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Tips, tools and help if something</text>
+<text x="44" y="197.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">goes wrong.</text>
+<text x="24" y="282" text-anchor="start" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">Safety tips</text>
+<rect x="24" y="295" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="331" r="20" fill="#EAF0FF"/><g transform="translate(48 319)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></g><text x="96" y="327" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Keep personal details private</text><text x="96" y="348.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Never share your phone number, address,</text>
+<text x="96" y="367.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">OTPs or bank details.</text>
+<rect x="24" y="399" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="435" r="20" fill="#EAF0FF"/><g transform="translate(48 423)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></g><text x="96" y="431" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Never send money</text><text x="96" y="452.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Frndu staff and hosts will never ask you</text>
+<text x="96" y="471.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">for money or gift cards.</text>
+<rect x="24" y="503" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="539" r="20" fill="#EAF0FF"/><g transform="translate(48 527)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></g><text x="96" y="535" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Stay on Frndu</text><text x="96" y="556.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Don't move to other apps. We can only</text>
+<text x="96" y="575.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">protect you here.</text>
+<rect x="24" y="607" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="643" r="20" fill="#EAF0FF"/><g transform="translate(48 631)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></g><text x="96" y="639" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Spot scams</text><text x="96" y="660.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Be careful with links, urgent requests or</text>
+<text x="96" y="679.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">offers that sound too good.</text>
+<text x="24" y="738" text-anchor="start" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">How we protect you</text>
+<rect x="24" y="751" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="787" r="20" fill="#FFF9EA"/><g transform="translate(48 775)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></g><text x="96" y="783" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Verified hosts</text><text x="96" y="804.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Every host passes a video check before</text>
+<text x="96" y="823.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">taking calls.</text>
+<rect x="24" y="855" width="342" height="92" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="891" r="20" fill="#FFF9EA"/><g transform="translate(48 879)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></g><text x="96" y="887" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Contact details hidden</text><text x="96" y="908.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Phone numbers and emails in chat are</text>
+<text x="96" y="927.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">hidden automatically.</text>
+<rect x="24" y="959" width="342" height="73" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><circle cx="60" cy="995" r="20" fill="#FFF9EA"/><g transform="translate(48 983)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></g><text x="96" y="991" text-anchor="start" font-size="15" font-weight="600" fill="#10233F" xml:space="preserve">Calls are moderated</text><text x="96" y="1012.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">We blur and end calls that break our rules.</text>
+<text x="24" y="1071" text-anchor="start" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">Report and block</text>
+<rect x="24" y="1084" width="342" height="168" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<!-- MenuRow "How to report someone" → 39 guide -->
+<g transform="translate(40 1100.0)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"/></g>
+<text x="76" y="1117.0" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">How to report someone</text>
+<g transform="translate(330 1102.0) scale(0.8333)" fill="none" stroke="#8794A5" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></g>
+<rect x="76" y="1139" width="274" height="1" fill="#EEF1F5"/>
+<rect class="hit" data-hit="row:How to report someone" x="24" y="1084" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- MenuRow "Blocked users" → 41 -->
+<g transform="translate(40 1156.0)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m17 8 5 5"/><path d="m22 8-5 5"/></g>
+<text x="76" y="1173.0" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Blocked users</text>
+<g transform="translate(330 1158.0) scale(0.8333)" fill="none" stroke="#8794A5" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></g>
+<rect x="76" y="1195" width="274" height="1" fill="#EEF1F5"/>
+<rect class="hit" data-hit="row:Blocked users" x="24" y="1140" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- MenuRow "Community Guidelines" → 68 -->
+<g transform="translate(40 1212.0)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g>
+<text x="76" y="1229.0" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Community Guidelines</text>
+<g transform="translate(330 1214.0) scale(0.8333)" fill="none" stroke="#8794A5" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></g>
+<rect class="hit" data-hit="row:Community Guidelines" x="24" y="1196" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="1291" text-anchor="start" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">Emergency help (India)</text>
+<rect x="24" y="1304" width="342" height="96" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="1341" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Emergency</text>
+<text x="350" y="1341" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">112</text>
+<text x="40" y="1373" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Cyber crime helpline</text>
+<text x="350" y="1373" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">1930</text>
+<text x="24" y="1425.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Frndu is for adults 18+ only. Numbers to be confirmed by</text>
+<text x="24" y="1444.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Legal before launch.</text>
+</g></g>
+<rect x="0" y="714" width="390" height="130" fill="#FFF4D6"/>
+<!-- Bottom action area -->
+<!-- Button destructive: "Report an emergency" → 66 Safety (P0) — Q3; support link for now -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="#D9363E" filter="url(#gl-red)"/><rect x="25" y="739" width="340" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Report an emergency</text>
+<rect class="hit" data-hit="btn:Report an emergency" x="24" y="738" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<!-- Back button → previous -->
+<rect x="14" y="53" width="44" height="44" rx="22" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(24 63)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></g>
+<rect class="hit" data-hit="back" x="12" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Safety Center</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

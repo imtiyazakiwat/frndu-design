@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 35 Withdrawal History – Detail Completed (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c35"><rect x="0" y="103" width="390" height="717"/></clipPath>
+<g clip-path="url(#c35)"><g transform="translate(0 0)">
+<!-- ListRow "10,000 diamonds" (frosted tile) -->
+<rect x="12" y="119" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="155.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 143.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></g>
+<text x="84" y="142" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">10,000 diamonds</text>
+<text x="84" y="161" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">9 Oct 2026</text>
+<text x="84" y="179" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">WD-30215</text>
+<!-- StatusPill Pending --><rect x="300" y="143.0" width="66" height="24" rx="12.0" fill="#EAF0FF"/><text x="333" y="159.0" text-anchor="middle" font-size="12" font-weight="600" fill="#5B7CFA" xml:space="preserve">Pending</text>
+<rect class="hit" data-hit="wd:WD-30215" x="24" y="115" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "8,000 diamonds" (frosted tile) -->
+<rect x="12" y="199" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="235.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 223.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></g>
+<text x="84" y="222" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">8,000 diamonds</text>
+<text x="84" y="241" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">1 Oct 2026</text>
+<text x="84" y="259" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">WD-30102</text>
+<!-- StatusPill Processing --><rect x="282" y="223.0" width="84" height="24" rx="12.0" fill="#EAF0FF"/><text x="324" y="239.0" text-anchor="middle" font-size="12" font-weight="600" fill="#5B7CFA" xml:space="preserve">Processing</text>
+<rect class="hit" data-hit="wd:WD-30102" x="24" y="195" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "12,500 diamonds" (frosted tile) -->
+<rect x="12" y="279" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="315.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 303.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></g>
+<text x="84" y="302" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">12,500 diamonds</text>
+<text x="84" y="321" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">15 Sep 2026</text>
+<text x="84" y="339" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">WD-29870</text>
+<!-- StatusPill Completed --><rect x="285" y="303.0" width="81" height="24" rx="12.0" fill="#FFFFFF" stroke="#21A366" stroke-width="1.5"/><text x="325" y="319.0" text-anchor="middle" font-size="12" font-weight="600" fill="#21A366" xml:space="preserve">Completed</text>
+<rect class="hit" data-hit="wd:WD-29870" x="24" y="275" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "6,000 diamonds" (frosted tile) -->
+<rect x="12" y="359" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="395.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 383.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></g>
+<text x="84" y="382" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">6,000 diamonds</text>
+<text x="84" y="401" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">2 Sep 2026</text>
+<text x="84" y="419" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">WD-29711</text>
+<!-- StatusPill Failed --><rect x="310" y="383.0" width="56" height="24" rx="12.0" fill="#FDE8E8"/><text x="338" y="399.0" text-anchor="middle" font-size="12" font-weight="600" fill="#D9363E" xml:space="preserve">Failed</text>
+<rect class="hit" data-hit="wd:WD-29711" x="24" y="355" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+</g></g>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<!-- Back button → previous -->
+<rect x="14" y="53" width="44" height="44" rx="22" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(24 63)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></g>
+<rect class="hit" data-hit="back" x="12" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Withdrawals</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- Scrim -->
+<rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.32"/><rect class="hit" data-hit="scrim" x="0" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/><!-- BottomSheet (frosted) -->
+<path d="M0 504 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFF4D6" filter="url(#sh-lg)"/>
+<path d="M0 504 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFFFFF" fill-opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<rect class="hit" data-hit="sheet" x="0" y="480" width="390" height="364" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="175" y="488" width="40" height="4" rx="2" fill="#D8DDE5"/>
+<text x="24" y="525.2" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Withdrawal details</text><!-- StatusPill Completed --><rect x="285" y="508" width="81" height="24" rx="12.0" fill="#FFFFFF" stroke="#21A366" stroke-width="1.5"/><text x="325" y="524.0" text-anchor="middle" font-size="12" font-weight="600" fill="#21A366" xml:space="preserve">Completed</text>
+<rect x="24" y="550" width="342" height="160" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="587" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Amount</text>
+<text x="350" y="587" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">12,500</text>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(275 573) scale(0.7500)" fill="none" stroke="#5B7CFA" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="40" y="619" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">You received</text>
+<text x="350" y="619" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">$86.50</text>
+<text x="40" y="651" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Sent to</text>
+<text x="350" y="651" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">UPI ••• 1234</text>
+<text x="40" y="683" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Reference ID</text>
+<text x="350" y="683" text-anchor="end" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">WD-29870</text>
+<!-- Link "Download receipt" → pdf -->
+<rect x="24" y="722" width="342" height="44" fill="#FFFFFF" fill-opacity="0"/><text x="195" y="749" text-anchor="middle" font-size="14" font-weight="600" fill="#5B7CFA" xml:space="preserve">Download receipt</text><rect class="hit" data-hit="link:Download receipt" x="24" y="722" width="342" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

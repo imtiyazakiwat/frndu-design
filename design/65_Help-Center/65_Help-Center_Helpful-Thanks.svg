@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 65 Help Center – Helpful Thanks (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c65"><rect x="0" y="103" width="390" height="619"/></clipPath>
+<g clip-path="url(#c65)"><g transform="translate(0 0)">
+<!-- Input (empty) -->
+<rect x="24" y="115" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 133.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+<text x="72" y="149.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">Search help articles</text>
+<rect class="hit" data-hit="input:Search help articles" x="24" y="115" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="214" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Calls &amp; Billing</text>
+<!-- Accordion "How am I charged for a call?" -->
+<text x="24" y="265.2" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">How am I charged for a call?</text>
+<g transform="translate(346 251.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></g>
+<rect class="hit" data-hit="faq:How am I charged for a c" x="24" y="233" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="304.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">The first minute is charged when the call</text>
+<text x="24" y="326.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">connects. After that, each new minute is charged</text>
+<text x="24" y="348.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">at the start of the minute. If the call never</text>
+<text x="24" y="370.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">connects, the first minute is refunded</text>
+<text x="24" y="392.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">automatically.</text>
+<text x="24" y="433" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Was this helpful?</text>
+<rect x="160" y="415" width="58" height="32" rx="16.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><text x="189.0" y="436.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">Yes</text><rect class="hit" data-hit="chip:Yes" x="160" y="415" width="58" height="32" fill="#FFFFFF" fill-opacity="0"/><rect x="226" y="415" width="50" height="32" rx="16.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="251.0" y="436.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">No</text><rect class="hit" data-hit="chip:No" x="226" y="415" width="50" height="32" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="459" width="342" height="1" fill="#EEF1F5"/>
+<!-- Accordion "What happens if my balance runs out?" -->
+<text x="24" y="492.2" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">What happens if my balance runs out?</text>
+<g transform="translate(346 478.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<rect class="hit" data-hit="faq:What happens if my balan" x="24" y="460" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="516" width="342" height="1" fill="#EEF1F5"/>
+<!-- Accordion "Why did my call drop?" -->
+<text x="24" y="549.2" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Why did my call drop?</text>
+<g transform="translate(346 535.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<rect class="hit" data-hit="faq:Why did my call drop?" x="24" y="517" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="573" width="342" height="1" fill="#EEF1F5"/>
+<!-- Accordion "Can I get a refund?" -->
+<text x="24" y="606.2" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Can I get a refund?</text>
+<g transform="translate(346 592.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<rect class="hit" data-hit="faq:Can I get a refund?" x="24" y="574" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="630" width="342" height="1" fill="#EEF1F5"/>
+<!-- Toast -->
+<rect x="24" y="666" width="342" height="48" rx="24" fill="#10233F" fill-opacity="0.92" filter="url(#sh-card)"/><g transform="translate(40 680) scale(0.8333)" fill="none" stroke="#FFFFFF" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></g><text x="68" y="695" text-anchor="start" font-size="15" font-weight="500" fill="#FFFFFF" xml:space="preserve">Thanks for your feedback</text>
+</g></g>
+<rect x="0" y="714" width="390" height="130" fill="#FFF4D6"/>
+<!-- Bottom action area -->
+<!-- Button secondary: "Contact Support" → 66 (Q3) / support link -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Contact Support</text>
+<rect class="hit" data-hit="btn:Contact Support" x="24" y="738" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<!-- Back button → previous -->
+<rect x="14" y="53" width="44" height="44" rx="22" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(24 63)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></g>
+<rect class="hit" data-hit="back" x="12" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Help &amp; Support</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

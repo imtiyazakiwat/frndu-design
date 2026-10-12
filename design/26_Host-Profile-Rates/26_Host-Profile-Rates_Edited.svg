@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 26 Host Profile Rates – Edited (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c26"><rect x="0" y="103" width="390" height="547"/></clipPath>
+<g clip-path="url(#c26)"><g transform="translate(0 0)">
+<!-- Cover photo uploader (photo) → photo picker + crop (from 06) -->
+<clipPath id="cov"><rect x="24" y="119" width="342" height="192" rx="16"/></clipPath><g clip-path="url(#cov)"><rect x="24" y="119" width="342" height="192" fill="#FDE8E8"/><circle cx="300" cy="149" r="70" fill="#EAF0FF"/><circle cx="195" cy="201" r="44" fill="#E94B4B" opacity="0.45"/><ellipse cx="195" cy="329" rx="96" ry="72" fill="#E94B4B" opacity="0.45"/><image href="https://frndu-prototype.vercel.app/img/priya_full.jpg" x="24" y="119" width="342" height="192" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<rect class="hit" data-hit="cover" x="24" y="119" width="342" height="192" fill="#FFFFFF" fill-opacity="0"/>
+<!-- "Change" chip → photo picker --><rect x="267" y="267" width="87" height="32" rx="16" fill="#FFFFFF"/><g transform="translate(279 275) scale(0.6667)" fill="none" stroke="#10233F" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></g><text x="301" y="288" text-anchor="start" font-size="12" font-weight="600" fill="#10233F" xml:space="preserve">Change</text>
+<!-- Intro audio recorder (recorded) -->
+<rect x="24" y="335" width="342" height="120" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="366" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Intro audio</text>
+<!-- Play intro --><circle cx="68" cy="411" r="28" fill="#EAF0FF"/><g transform="translate(58 399)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l14 9-14 9V3z"/></g>
+<rect class="hit" data-hit="record" x="40" y="383" width="56" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="112" y="402.0" width="3" height="6.0" rx="1.5" fill="#5B7CFA"/><rect x="118" y="395.4" width="3" height="19.1" rx="1.5" fill="#5B7CFA"/><rect x="124" y="395.5" width="3" height="18.9" rx="1.5" fill="#5B7CFA"/><rect x="130" y="400.3" width="3" height="9.4" rx="1.5" fill="#5B7CFA"/><rect x="136" y="401.6" width="3" height="6.7" rx="1.5" fill="#5B7CFA"/><rect x="142" y="399.6" width="3" height="10.8" rx="1.5" fill="#5B7CFA"/><rect x="148" y="397.8" width="3" height="14.4" rx="1.5" fill="#5B7CFA"/><rect x="154" y="401.9" width="3" height="6.3" rx="1.5" fill="#5B7CFA"/><rect x="160" y="395.0" width="3" height="20.1" rx="1.5" fill="#5B7CFA"/><rect x="166" y="393.4" width="3" height="23.1" rx="1.5" fill="#5B7CFA"/><rect x="172" y="398.9" width="3" height="12.3" rx="1.5" fill="#D8DDE5"/><rect x="178" y="399.5" width="3" height="10.9" rx="1.5" fill="#D8DDE5"/><rect x="184" y="399.6" width="3" height="10.8" rx="1.5" fill="#D8DDE5"/><rect x="190" y="401.3" width="3" height="7.3" rx="1.5" fill="#D8DDE5"/><rect x="196" y="401.9" width="3" height="6.3" rx="1.5" fill="#D8DDE5"/><rect x="202" y="396.6" width="3" height="16.8" rx="1.5" fill="#D8DDE5"/><rect x="208" y="393.9" width="3" height="22.2" rx="1.5" fill="#D8DDE5"/><rect x="214" y="398.4" width="3" height="13.1" rx="1.5" fill="#D8DDE5"/><rect x="220" y="398.0" width="3" height="13.9" rx="1.5" fill="#D8DDE5"/><rect x="226" y="395.5" width="3" height="19.0" rx="1.5" fill="#D8DDE5"/><rect x="232" y="399.0" width="3" height="11.9" rx="1.5" fill="#D8DDE5"/><rect x="238" y="402.0" width="3" height="6.1" rx="1.5" fill="#D8DDE5"/><rect x="244" y="399.9" width="3" height="10.1" rx="1.5" fill="#D8DDE5"/><rect x="250" y="396.7" width="3" height="16.6" rx="1.5" fill="#D8DDE5"/><rect x="256" y="399.1" width="3" height="11.9" rx="1.5" fill="#D8DDE5"/><rect x="262" y="397.7" width="3" height="14.6" rx="1.5" fill="#D8DDE5"/><rect x="268" y="393.3" width="3" height="23.4" rx="1.5" fill="#D8DDE5"/><rect x="274" y="396.4" width="3" height="17.2" rx="1.5" fill="#D8DDE5"/><text x="112" y="433" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">00:04 / 00:12</text>
+<!-- Re-record → recording; Delete → empty --><g transform="translate(290 421) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></g><g transform="translate(326 421) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></g>
+<text x="24" y="494" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Greeting</text>
+<!-- Input (focused) -->
+<rect x="24" y="507" width="342" height="96" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="25.0" y="508.0" width="340" height="94" rx="20" fill="none" stroke="#5B7CFA" stroke-width="2"/>
+<text x="40" y="537.5" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">Hi! I love talking about music, movies</text>
+<text x="40" y="561.5" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">and life. Say hello anytime. Let’s chat!</text>
+<rect x="40.0" y="523" width="2" height="22" rx="1" fill="#5B7CFA"/>
+<rect class="hit" data-hit="input:Say hello to your callers" x="24" y="507" width="342" height="96" fill="#FFFFFF" fill-opacity="0"/>
+<text x="366" y="625" text-anchor="end" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">79/120</text>
+<text x="24" y="669" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Languages</text>
+<!-- "Edit" → 09A as sheet --><text x="366" y="669" text-anchor="end" font-size="14" font-weight="600" fill="#5B7CFA" xml:space="preserve">Edit</text><rect class="hit" data-hit="link:Edit" x="318" y="642" width="48" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="686" width="66" height="40" rx="20.0" fill="#EAF0FF"/><text x="56.9" y="711.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Hindi</text><rect class="hit" data-hit="chip:Hindi" x="24" y="686" width="66" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="98" y="686" width="82" height="40" rx="20.0" fill="#EAF0FF"/><text x="138.9" y="711.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">English</text><rect class="hit" data-hit="chip:English" x="98" y="686" width="82" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="188" y="686" width="90" height="40" rx="20.0" fill="#EAF0FF"/><text x="233.0" y="711.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Kannada</text><rect class="hit" data-hit="chip:Kannada" x="188" y="686" width="90" height="40" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Rates card --><rect x="24" y="750" width="342" height="258" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="781" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Voice</text>
+<rect x="253" y="762" width="97" height="28" rx="14" fill="#EAF0FF"/><!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(263 768) scale(0.6667)" fill="none" stroke="#5B7CFA" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="285" y="781" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">40/min</text>
+<!-- Slider --><rect x="52" y="808" width="286" height="4" rx="2" fill="#E2E7EF"/><rect x="52" y="808" width="57" height="4" rx="2" fill="#5B7CFA"/><circle cx="109" cy="810" r="11" fill="#FFFFFF" stroke="#5B7CFA" stroke-width="2" filter="url(#sh-sm)"/>
+<text x="40" y="840" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">30</text><text x="350" y="840" text-anchor="end" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">80</text>
+<text x="40" y="879" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Video</text>
+<rect x="253" y="860" width="97" height="28" rx="14" fill="#EAF0FF"/><!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(263 866) scale(0.6667)" fill="none" stroke="#5B7CFA" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="285" y="879" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">90/min</text>
+<!-- Slider --><rect x="52" y="906" width="286" height="4" rx="2" fill="#E2E7EF"/><rect x="52" y="906" width="95" height="4" rx="2" fill="#5B7CFA"/><circle cx="147" cy="908" r="11" fill="#FFFFFF" stroke="#5B7CFA" stroke-width="2" filter="url(#sh-sm)"/>
+<text x="40" y="938" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">60</text><text x="350" y="938" text-anchor="end" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">150</text>
+<text x="40" y="967.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">New rates apply to new calls. You can change them</text>
+<text x="40" y="986.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">once an hour.</text>
+<rect x="24" y="1032" width="342" height="112" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- MenuRow "Account settings" → 40 -->
+<g transform="translate(40 1048.0)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></g>
+<text x="76" y="1065.0" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Account settings</text>
+<g transform="translate(330 1050.0) scale(0.8333)" fill="none" stroke="#8794A5" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></g>
+<rect x="76" y="1087" width="274" height="1" fill="#EEF1F5"/>
+<rect class="hit" data-hit="row:Account settings" x="24" y="1032" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- MenuRow "Switch to User view" → 13 -->
+<g transform="translate(40 1104.0)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></g>
+<text x="76" y="1121.0" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Switch to User view</text>
+<g transform="translate(330 1106.0) scale(0.8333)" fill="none" stroke="#8794A5" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></g>
+<rect class="hit" data-hit="row:Switch to User view" x="24" y="1088" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+</g></g>
+<!-- Button primary: "Save" → stay on 26 + toast "Saved" -->
+<rect x="24" y="674" width="342" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="25" y="675" width="340" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="195.0" y="708" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Save</text>
+<rect class="hit" data-hit="btn:Save" x="24" y="674" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<text x="24" y="86" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">My profile</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- BottomNavigation (host, owner: Girish): floating frosted pill 16,750 358x68 -->
+<rect x="0" y="694" width="390" height="150" fill="url(#g-fade)"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFF4D6" opacity="0.6"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFFFFF" fill-opacity="0.8" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Tab 1 "Dashboard" → 24 -->
+<g transform="translate(39.8 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></g>
+<text x="51.8" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Dashboard</text>
+<rect class="hit" data-hit="htab:Dashboard" x="16.0" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 2 "Messages" → 27 -->
+<g transform="translate(111.4 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></g>
+<text x="123.4" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Messages</text>
+
+<rect class="hit" data-hit="htab:Messages" x="87.6" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 3 "Calls" → 25 -->
+<g transform="translate(183.0 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+<text x="195.0" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Calls</text>
+<rect class="hit" data-hit="htab:Calls" x="159.2" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 4 "Earnings" → 32 -->
+<g transform="translate(254.6 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></g>
+<text x="266.6" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Earnings</text>
+<rect class="hit" data-hit="htab:Earnings" x="230.8" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 5 "Profile" → 26 -->
+<rect x="306.4" y="756" width="63.6" height="56" rx="22" fill="#EAF0FF" opacity="1"/>
+<g transform="translate(326.2 762)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+<text x="338.2" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#5B7CFA" xml:space="preserve">Profile</text>
+<rect class="hit" data-hit="htab:Profile" x="302.4" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

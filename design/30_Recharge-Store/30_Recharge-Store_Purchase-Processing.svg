@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 30 Recharge Store – Purchase Processing (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c30"><rect x="0" y="103" width="390" height="643"/></clipPath>
+<g clip-path="url(#c30)"><g transform="translate(0 0)">
+<!-- Balance header -->
+<rect x="24" y="115" width="342" height="112" rx="20" fill="#5B7CFA"/>
+<circle cx="340" cy="125" r="70" fill="#FFFFFF" opacity="0.10"/>
+<text x="44" y="149" text-anchor="start" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">Your balance</text>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(44 165) scale(1.1667)" fill="none" stroke="#FFFFFF" stroke-width="1.71" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="80" y="190" text-anchor="start" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="-0.6" xml:space="preserve">1,250</text>
+<rect x="232" y="179" width="118" height="32" rx="16" fill="#FFFFFF"/><g transform="translate(244 186) scale(0.7500)" fill="none" stroke="#5B7CFA" stroke-width="2.67" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></g><text x="268" y="200" text-anchor="start" font-size="13" font-weight="600" fill="#5B7CFA" xml:space="preserve">History</text><rect class="hit" data-hit="link:Purchase History" x="226" y="173" width="130" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="270" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Choose a bundle</text>
+<!-- Bundle 100 → store purchase → 48 --><g opacity="0.5"><rect x="24" y="289" width="165" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(40 307)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="70" y="328" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.3" xml:space="preserve">100</text>
+<text x="40" y="356" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Starter</text>
+<rect x="40" y="373" width="133" height="36" rx="18" fill="#D8DDE5"/><text x="106" y="396" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF" xml:space="preserve">₹299</text>
+</g>
+<!-- Bundle 550 → store purchase → 48 --><g><rect x="201" y="289" width="165" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(217 307)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="247" y="328" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.3" xml:space="preserve">550</text>
+<rect x="217" y="341" width="82" height="22" rx="11" fill="#FDE8E8"/><text x="225" y="356" text-anchor="start" font-size="12" font-weight="600" fill="#E94B4B" xml:space="preserve">+10% bonus</text>
+<rect x="217" y="373" width="133" height="36" rx="18" fill="#5B7CFA"/><circle cx="283" cy="391" r="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.4"/><path d="M283 383 a8 8 0 0 1 8 8" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+<!-- Bundle 1,200 → store purchase → 48 --><g opacity="0.5"><rect x="24" y="433" width="165" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(40 451)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="70" y="472" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.3" xml:space="preserve">1,200</text>
+<rect x="40" y="485" width="82" height="22" rx="11" fill="#FDE8E8"/><text x="48" y="500" text-anchor="start" font-size="12" font-weight="600" fill="#E94B4B" xml:space="preserve">+20% bonus</text>
+<rect x="40" y="517" width="133" height="36" rx="18" fill="#D8DDE5"/><text x="106" y="540" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF" xml:space="preserve">₹699</text>
+</g>
+<!-- Bundle 3,000 → store purchase → 48 --><g opacity="0.5"><rect x="201" y="433" width="165" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<path d="M306 433 H350 a16 16 0 0 1 16 16 V457 H306 a12 12 0 0 1 -12 -12 a12 12 0 0 1 12 -12 Z" fill="#E94B4B"/><g transform="translate(306 437) scale(0.6667)" fill="none" stroke="#FFFFFF" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></g><text x="326" y="450" text-anchor="start" font-size="11" font-weight="700" fill="#FFFFFF" xml:space="preserve">VIP</text>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(217 451)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g><text x="247" y="472" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.3" xml:space="preserve">3,000</text>
+<rect x="217" y="485" width="82" height="22" rx="11" fill="#FDE8E8"/><text x="225" y="500" text-anchor="start" font-size="12" font-weight="600" fill="#E94B4B" xml:space="preserve">+30% bonus</text>
+<rect x="217" y="517" width="133" height="36" rx="18" fill="#D8DDE5"/><text x="283" y="540" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF" xml:space="preserve">₹999</text>
+</g>
+<text x="195" y="598.1" text-anchor="middle" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">Payments are handled securely by the App Store</text>
+<text x="195" y="617.1" text-anchor="middle" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">or Google Play.</text>
+<!-- Toast -->
+<rect x="24" y="666" width="342" height="48" rx="24" fill="#10233F" fill-opacity="0.92" filter="url(#sh-card)"/><g transform="translate(40 680) scale(0.8333)" fill="none" stroke="#FFFFFF" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g><text x="68" y="695" text-anchor="start" font-size="15" font-weight="500" fill="#FFFFFF" xml:space="preserve">Processing…</text>
+</g></g>
+<!-- T2 Tab root --><text x="24" y="86" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">Wallet</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- BottomNavigation (user, owner: Girish): floating frosted pill 16,750 358x68 -->
+<rect x="0" y="694" width="390" height="150" fill="url(#g-fade)"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFF4D6" opacity="0.6"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFFFFF" fill-opacity="0.8" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Tab 1 "Explore" → 13 -->
+<g transform="translate(48.8 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></g>
+<text x="60.8" y="803" text-anchor="middle" font-size="12" font-weight="600" fill="#8794A5" xml:space="preserve">Explore</text>
+<rect class="hit" data-hit="tab:Explore" x="16.0" y="750" width="89.5" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 2 "Messages" → 27 -->
+<g transform="translate(138.2 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></g>
+<text x="150.2" y="803" text-anchor="middle" font-size="12" font-weight="600" fill="#8794A5" xml:space="preserve">Messages</text>
+<rect x="156" y="757" width="17" height="16" rx="8" fill="#E94B4B" stroke="#FFFFFF" stroke-width="1.5"/><text x="165" y="769" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF" xml:space="preserve">3</text>
+<rect class="hit" data-hit="tab:Messages" x="105.5" y="750" width="89.5" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 3 "Wallet" → 30 -->
+<rect x="203.8" y="756" width="72.0" height="56" rx="22" fill="#EAF0FF" opacity="1"/>
+<g transform="translate(227.8 762)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></g>
+<text x="239.8" y="803" text-anchor="middle" font-size="12" font-weight="600" fill="#5B7CFA" xml:space="preserve">Wallet</text>
+<rect class="hit" data-hit="tab:Wallet" x="195.0" y="750" width="89.5" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 4 "Profile" → 40 -->
+<g transform="translate(317.2 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+<text x="329.2" y="803" text-anchor="middle" font-size="12" font-weight="600" fill="#8794A5" xml:space="preserve">Profile</text>
+<rect class="hit" data-hit="tab:Profile" x="284.5" y="750" width="89.5" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

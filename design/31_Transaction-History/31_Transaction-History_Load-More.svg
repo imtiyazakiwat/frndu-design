@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 31 Transaction History – Load More (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c31"><rect x="0" y="103" width="390" height="717"/></clipPath>
+<g clip-path="url(#c31)"><g transform="translate(0 -140)">
+<!-- SegmentedTabs (frosted track) -->
+<rect x="24" y="115" width="342" height="48" rx="24.0" fill="#FFFFFF" fill-opacity="0.5" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="28.0" y="119" width="167.0" height="40" rx="20.0" fill="#FFFFFF" filter="url(#sh-sm)"/>
+<text x="111.5" y="144.0" text-anchor="middle" font-size="14" font-weight="600" fill="#5B7CFA" xml:space="preserve">All</text>
+<rect class="hit" data-hit="seg:All" x="28" y="115" width="167" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="278.5" y="144.0" text-anchor="middle" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">Purchases</text>
+<rect class="hit" data-hit="seg:Purchases" x="195" y="115" width="167" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="175" width="91" height="36" rx="18.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><text x="69.6" y="198.0" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF" xml:space="preserve">All types</text><rect class="hit" data-hit="chip:All types" x="24" y="175" width="91" height="36" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="123" y="175" width="103" height="36" rx="18.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="174.6" y="198.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Recharges</text><rect class="hit" data-hit="chip:Recharges" x="123" y="175" width="103" height="36" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="234" y="175" width="66" height="36" rx="18.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="266.9" y="198.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Calls</text><rect class="hit" data-hit="chip:Calls" x="234" y="175" width="66" height="36" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="219" width="63" height="36" rx="18.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/><text x="55.6" y="242.0" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Chat</text><rect class="hit" data-hit="chip:Chat" x="24" y="219" width="63" height="36" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="278" text-anchor="start" font-size="14" font-weight="600" fill="#66758A" xml:space="preserve">October 2026</text>
+<!-- ListRow "Recharge" (frosted tile) -->
+<rect x="12" y="295" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="331.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 319.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="84" y="318" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Recharge</text>
+<text x="84" y="337" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">9 Oct, 9:00 AM</text>
+<text x="84" y="355" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">RCPT-88415</text>
+<text x="366" y="323" text-anchor="end" font-size="15" font-weight="700" fill="#21A366" xml:space="preserve">+550</text><text x="366" y="343" text-anchor="end" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">diamonds</text>
+<rect class="hit" data-hit="tx:Recharge:+550" x="24" y="291" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "Call with Priya" (frosted tile) -->
+<rect x="12" y="375" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="411.0" r="24.0" fill="#FFF9EA"/><g transform="translate(36.0 399.0)" fill="none" stroke="#66758A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></g>
+<text x="84" y="398" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Call with Priya</text>
+<text x="84" y="417" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">8 Oct, 9:41 PM</text>
+<text x="84" y="435" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">12:40 min</text>
+<text x="366" y="403" text-anchor="end" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">−480</text><text x="366" y="423" text-anchor="end" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">diamonds</text>
+<rect class="hit" data-hit="tx:Call with Priya:−480" x="24" y="371" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "Chat with Ananya" (frosted tile) -->
+<rect x="12" y="455" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="491.0" r="24.0" fill="#FFF9EA"/><g transform="translate(36.0 479.0)" fill="none" stroke="#66758A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></g>
+<text x="84" y="478" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Chat with Ananya</text>
+<text x="84" y="497" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">8 Oct, 6:02 PM</text>
+<text x="84" y="515" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">3 messages</text>
+<text x="366" y="483" text-anchor="end" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">−9</text><text x="366" y="503" text-anchor="end" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">diamonds</text>
+<rect class="hit" data-hit="tx:Chat with Ananya:−9" x="24" y="451" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "Recharge" (frosted tile) -->
+<rect x="12" y="535" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="571.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 559.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="84" y="558" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Recharge</text>
+<text x="84" y="577" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">5 Oct, 1:15 PM</text>
+<text x="84" y="595" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">RCPT-88102</text>
+<text x="366" y="563" text-anchor="end" font-size="15" font-weight="700" fill="#66758A" xml:space="preserve">+100</text><!-- StatusPill Pending --><rect x="300" y="573" width="66" height="20" rx="10.0" fill="#EAF0FF"/><text x="333" y="587.0" text-anchor="middle" font-size="12" font-weight="600" fill="#5B7CFA" xml:space="preserve">Pending</text>
+<rect class="hit" data-hit="tx:Recharge:+100" x="24" y="531" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "Call with Meera" (frosted tile) -->
+<rect x="12" y="615" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="651.0" r="24.0" fill="#FFF9EA"/><g transform="translate(36.0 639.0)" fill="none" stroke="#66758A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+<text x="84" y="638" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Call with Meera</text>
+<text x="84" y="657" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">4 Oct, 10:20 PM</text>
+<text x="84" y="675" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">5:02 min</text>
+<text x="366" y="643" text-anchor="end" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">−200</text><text x="366" y="663" text-anchor="end" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">diamonds</text>
+<rect class="hit" data-hit="tx:Call with Meera:−200" x="24" y="611" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<!-- ListRow "Recharge" (frosted tile) -->
+<rect x="12" y="695" width="366" height="72" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<circle cx="48.0" cy="731.0" r="24.0" fill="#EAF0FF"/><g transform="translate(36.0 719.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="84" y="718" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Recharge</text>
+<text x="84" y="737" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">1 Oct, 8:00 PM</text>
+<text x="84" y="755" text-anchor="start" font-size="12" font-weight="500" fill="#8794A5" xml:space="preserve">RCPT-87730</text>
+<text x="366" y="723" text-anchor="end" font-size="15" font-weight="700" fill="#66758A" xml:space="preserve">+1,200</text><!-- StatusPill Failed --><rect x="310" y="733" width="56" height="20" rx="10.0" fill="#FDE8E8"/><text x="338" y="747.0" text-anchor="middle" font-size="12" font-weight="600" fill="#D9363E" xml:space="preserve">Failed</text>
+<rect class="hit" data-hit="tx:Recharge:+1,200" x="24" y="691" width="342" height="80" fill="#FFFFFF" fill-opacity="0"/>
+<circle cx="195" cy="795" r="10" fill="none" stroke="#5B7CFA" stroke-opacity="0.35" stroke-width="2.4"/><path d="M195 785 a10 10 0 0 1 10 10" fill="none" stroke="#5B7CFA" stroke-width="2.4" stroke-linecap="round"/>
+</g></g>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<!-- Back button → previous -->
+<rect x="14" y="53" width="44" height="44" rx="22" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(24 63)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></g>
+<rect class="hit" data-hit="back" x="12" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Transaction history</text>
+<!-- Right action (mail) → None -->
+<rect x="332" y="53" width="44" height="44" rx="22" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(342 63)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></g>
+<rect class="hit" data-hit="right:mail" x="330" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

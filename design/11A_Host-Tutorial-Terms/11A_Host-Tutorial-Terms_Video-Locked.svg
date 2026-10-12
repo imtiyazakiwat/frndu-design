@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 11A Host Tutorial Terms – Video Locked (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c11a"><rect x="0" y="103" width="390" height="611"/></clipPath>
+<g clip-path="url(#c11a)"><g transform="translate(0 0)">
+<text x="24" y="135.3" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">Before you start</text>
+<!-- Tutorial video card 16:9 (only if Client supplies a video) -->
+<rect x="24" y="161" width="342" height="192" rx="16" fill="#10233F"/><circle cx="195" cy="257" r="28" fill="#FFFFFF" opacity="0.95"/><g transform="translate(185 245)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l14 9-14 9V3z"/></g>
+<rect x="24" y="361" width="342" height="4" rx="2" fill="#E2E7EF"/><rect x="24" y="361" width="137" height="4" rx="2" fill="#5B7CFA"/>
+<text x="24" y="381.4" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Watch at least 90% to continue</text>
+<!-- Guideline card "Host guidelines" (expandable) --><rect x="24" y="403" width="342" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 420)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></g>
+<text x="76" y="438" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Host guidelines</text>
+<g transform="translate(326 420)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<text x="40" y="468.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Placeholder, content from Client. A short</text>
+<text x="40" y="490.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">explanation of this topic for new hosts,</text>
+<text x="40" y="512.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">written in a warm and simple way.</text>
+<!-- Guideline card "Payout structure" (expandable) --><rect x="24" y="547" width="342" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 564)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></g>
+<text x="76" y="582" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Payout structure</text>
+<g transform="translate(326 564)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<text x="40" y="612.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Placeholder, content from Client. A short</text>
+<text x="40" y="634.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">explanation of this topic for new hosts,</text>
+<text x="40" y="656.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">written in a warm and simple way.</text>
+<!-- Guideline card "Code of conduct" (expandable) --><rect x="24" y="691" width="342" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 708)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></g>
+<text x="76" y="726" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Code of conduct</text>
+<g transform="translate(326 708)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<text x="40" y="756.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Placeholder, content from Client. A short</text>
+<text x="40" y="778.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">explanation of this topic for new hosts,</text>
+<text x="40" y="800.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">written in a warm and simple way.</text>
+<!-- Guideline card "Call handling" (expandable) --><rect x="24" y="835" width="342" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 852)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></g>
+<text x="76" y="870" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Call handling</text>
+<g transform="translate(326 852)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g>
+<text x="40" y="900.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Placeholder, content from Client. A short</text>
+<text x="40" y="922.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">explanation of this topic for new hosts,</text>
+<text x="40" y="944.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">written in a warm and simple way.</text>
+<!-- Checkbox row (locked) -->
+<!-- Checkbox 24 in 48x48 touch area -->
+<rect x="24" y="991" width="48" height="48" rx="12" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="36.75" y="1003.75" width="22.5" height="22.5" rx="8" fill="#E9EDF3" stroke="#D8DDE5" stroke-width="1.5"/>
+<g transform="translate(42 1009) scale(0.5000)" fill="none" stroke="#8794A5" stroke-width="4.00" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></g>
+<text x="84" y="1018.2" text-anchor="start" font-size="15" font-weight="400" fill="#8794A5" xml:space="preserve">I accept the <tspan fill="#5B7CFA" font-weight="600">Host </tspan><tspan fill="#5B7CFA" font-weight="600">Terms </tspan><tspan fill="#5B7CFA" font-weight="600">&amp; </tspan><tspan fill="#5B7CFA" font-weight="600">Conditions</tspan></text>
+<!-- Host Terms & Conditions link → 68 -->
+<text x="84" y="1039.4" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Finish the guidelines to continue</text>
+</g></g>
+<!-- Bottom action area -->
+<!-- Button disabled: "Proceed to Dashboard" → 24 -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="#D8DDE5"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Proceed to Dashboard</text>
+<!-- TopBar (shared component, owner: Girish) y 47-103 -->
+<text x="195" y="81" text-anchor="middle" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Host guidelines</text>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

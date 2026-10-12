@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 24 Host Dashboard – Auto Offline Notice (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<clipPath id="c24"><rect x="0" y="103" width="390" height="619"/></clipPath>
+<g clip-path="url(#c24)"><g transform="translate(0 0)">
+<!-- PersistentBanner (warning) -->
+<rect x="24" y="119" width="342" height="44" rx="16" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="24" y="119" width="342" height="44" rx="16" fill="#FDE8E8" opacity="0.7"/>
+<g transform="translate(40 131.0) scale(0.8333)" fill="none" stroke="#E6A21A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></g>
+<text x="72" y="144.6" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">You were set to Offline after 3 missed calls.</text>
+<!-- Master card -->
+<rect x="24" y="179" width="342" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="217" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">You're Offline</text>
+<text x="40" y="243" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Go online to receive calls.</text>
+<!-- Master Switch (on = Success green) → go online, or "Before you go online" sheet when blocked -->
+<!-- Switch off --><g><rect x="286" y="205" width="64" height="36" rx="18.0" fill="#D8DDE5"/><circle cx="304.0" cy="223.0" r="15.0" fill="#FFFFFF" filter="url(#sh-sm)"/></g><rect class="hit" data-hit="switch:master" x="282" y="201.0" width="72" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Channels card -->
+<rect x="24" y="279" width="342" height="168" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 295)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+<text x="76" y="312" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Voice Mode</text>
+<!-- Switch on --><g><rect x="298" y="291" width="52" height="32" rx="16.0" fill="#5B7CFA"/><circle cx="334.0" cy="307.0" r="13.0" fill="#FFFFFF" filter="url(#sh-sm)"/></g><rect class="hit" data-hit="switch:Voice Mode" x="294" y="285.0" width="60" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="40" y="334.5" width="310" height="1" fill="#EEF1F5"/>
+<g transform="translate(40 351)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></g>
+<text x="76" y="368" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Video Mode</text>
+<!-- Switch on --><g><rect x="298" y="347" width="52" height="32" rx="16.0" fill="#5B7CFA"/><circle cx="334.0" cy="363.0" r="13.0" fill="#FFFFFF" filter="url(#sh-sm)"/></g><rect class="hit" data-hit="switch:Video Mode" x="294" y="341.0" width="60" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="40" y="390.5" width="310" height="1" fill="#EEF1F5"/>
+<g transform="translate(40 407)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></g>
+<text x="76" y="424" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">Chat Mode</text>
+<!-- Switch off --><g><rect x="298" y="403" width="52" height="32" rx="16.0" fill="#D8DDE5"/><circle cx="314.0" cy="419.0" r="13.0" fill="#FFFFFF" filter="url(#sh-sm)"/></g><rect class="hit" data-hit="switch:Chat Mode" x="294" y="397.0" width="60" height="44" fill="#FFFFFF" fill-opacity="0"/>
+<text x="24" y="467.4" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Turn on at least Voice or Video to go online.</text>
+<text x="24" y="512" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Today</text>
+<rect x="24" y="529" width="165" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Diamond glyph: placeholder for shared Diamond component (owner: Girish) --><g transform="translate(40 549) scale(0.9167)" fill="none" stroke="#5B7CFA" stroke-width="2.18" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></g>
+<text x="68" y="571" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">480</text>
+<text x="40" y="597" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Diamonds earned</text><rect x="201" y="529" width="165" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="217" y="571" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">12</text>
+<text x="217" y="597" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Calls completed</text>
+<rect x="24" y="629" width="165" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="671" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">1h 20m</text>
+<text x="40" y="697" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Talk time</text><rect x="201" y="629" width="165" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="217" y="671" text-anchor="start" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">1</text>
+<text x="217" y="697" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Missed calls</text>
+<!-- Connection health card -->
+<rect x="24" y="741" width="342" height="132" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="40" y="772" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Connection health</text>
+<g transform="translate(40 789)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></g>
+<text x="40" y="830" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Network</text>
+<g transform="translate(40 841) scale(0.6667)" fill="none" stroke="#21A366" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></g>
+<text x="62" y="854" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Good</text>
+<g transform="translate(146 789)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></g>
+<text x="146" y="830" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Microphone</text>
+<g transform="translate(146 841) scale(0.6667)" fill="none" stroke="#21A366" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></g>
+<text x="168" y="854" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Ready</text>
+<g transform="translate(252 789)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></g>
+<text x="252" y="830" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Camera</text>
+<g transform="translate(252 841) scale(0.6667)" fill="none" stroke="#21A366" stroke-width="3.00" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></g>
+<text x="274" y="854" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Ready</text>
+<!-- Quick links -->
+<!-- Quick link "Call history" → 25 --><rect x="24" y="897" width="106" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(65 915)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+<text x="77" y="962" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Call history</text>
+<rect class="hit" data-hit="quick:Call history" x="24" y="897" width="106" height="88" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Quick link "Earnings" → 32 --><rect x="142" y="897" width="106" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(183 915)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></g>
+<text x="195" y="962" text-anchor="middle" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Earnings</text>
+<rect class="hit" data-hit="quick:Earnings" x="142" y="897" width="106" height="88" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Quick link "Profile & rates" → 26 --><rect x="260" y="897" width="106" height="88" rx="20" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(301 915)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+<text x="313" y="962" text-anchor="middle" font-size="12" font-weight="600" fill="#10233F" xml:space="preserve">Profile &amp; rates</text>
+<rect class="hit" data-hit="quick:Profile &amp; rates" x="260" y="897" width="106" height="88" fill="#FFFFFF" fill-opacity="0"/>
+</g></g>
+<!-- T2 header: avatar → 00.1 (host variant) -->
+<clipPath id="av447540"><circle cx="44" cy="75" r="20.0"/></clipPath>
+<g clip-path="url(#av447540)"><rect x="24.0" y="55.0" width="40" height="40" fill="#FDE8E8"/><image href="https://frndu-prototype.vercel.app/img/priya.jpg" x="24.0" y="55.0" width="40" height="40" preserveAspectRatio="xMidYMin slice"/></g><circle cx="44" cy="75" r="19.25" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><text x="72" y="81" text-anchor="start" font-size="18" font-weight="700" fill="#10233F" xml:space="preserve">Hi, Priya</text><rect class="hit" data-hit="avatar" x="20" y="51" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- BottomNavigation (host, owner: Girish): floating frosted pill 16,750 358x68 -->
+<rect x="0" y="694" width="390" height="150" fill="url(#g-fade)"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFF4D6" opacity="0.6"/>
+<rect x="16" y="750" width="358" height="68" rx="34.0" fill="#FFFFFF" fill-opacity="0.8" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Tab 1 "Dashboard" → 24 -->
+<rect x="20.0" y="756" width="63.6" height="56" rx="22" fill="#EAF0FF" opacity="1"/>
+<g transform="translate(39.8 762)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></g>
+<text x="51.8" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#5B7CFA" xml:space="preserve">Dashboard</text>
+<rect class="hit" data-hit="htab:Dashboard" x="16.0" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 2 "Messages" → 27 -->
+<g transform="translate(111.4 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></g>
+<text x="123.4" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Messages</text>
+
+<rect class="hit" data-hit="htab:Messages" x="87.6" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 3 "Calls" → 25 -->
+<g transform="translate(183.0 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+<text x="195.0" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Calls</text>
+<rect class="hit" data-hit="htab:Calls" x="159.2" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 4 "Earnings" → 32 -->
+<g transform="translate(254.6 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></g>
+<text x="266.6" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Earnings</text>
+<rect class="hit" data-hit="htab:Earnings" x="230.8" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Tab 5 "Profile" → 26 -->
+<g transform="translate(326.2 762)" fill="none" stroke="#8794A5" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g>
+<text x="338.2" y="803" text-anchor="middle" font-size="11" font-weight="600" fill="#8794A5" xml:space="preserve">Profile</text>
+<rect class="hit" data-hit="htab:Profile" x="302.4" y="750" width="71.6" height="68" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>

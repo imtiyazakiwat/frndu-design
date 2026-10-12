@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1274" viewBox="0 0 1240 1274" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 00 Components – Buttons, inputs, OTP</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="1240" height="1274"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="1240" height="1274" fill="#FFF4D6"/>
+<text x="40" y="64" text-anchor="start" font-size="32" font-weight="700" fill="#10233F" letter-spacing="-0.6" xml:space="preserve">Buttons, inputs, OTP</text>
+<text x="40" y="90" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">One canonical definition per component. Variants, not copies. H56, radius 16, Button 16/700.</text>
+<text x="40" y="140" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Button</text>
+<text x="220" y="172" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Default</text>
+<text x="470" y="172" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Pressed</text>
+<text x="720" y="172" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Disabled</text>
+<text x="970" y="172" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Loading</text>
+<text x="40" y="217" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Primary</text>
+<!-- Button primary: "Continue" -->
+<rect x="220" y="184" width="230" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="221" y="185" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="335.0" y="218" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="220" y="184" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button pressed: "Continue" -->
+<rect x="470" y="184" width="230" height="56" rx="28.0" fill="#5270E1"/><rect x="471" y="185" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="585.0" y="218" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="470" y="184" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button disabled: "Continue" -->
+<rect x="720" y="184" width="230" height="56" rx="28.0" fill="#D8DDE5"/>
+<text x="835.0" y="218" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<!-- Button primary loading: "Continue" -->
+<rect x="970" y="184" width="230" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="971" y="185" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<circle cx="1085.0" cy="212.0" r="9" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.4"/><path d="M1085.0 203.0 a9 9 0 0 1 9 9" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+<text x="40" y="293" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Primary (Coral, emotional)</text>
+<!-- Button coral: "Continue" -->
+<rect x="220" y="260" width="230" height="56" rx="28.0" fill="url(#g-coral)" filter="url(#gl-coral)"/><rect x="221" y="261" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="335.0" y="294" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="220" y="260" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button coral: "Continue" -->
+<rect x="470" y="260" width="230" height="56" rx="28.0" fill="url(#g-coral)" filter="url(#gl-coral)"/><rect x="471" y="261" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="585.0" y="294" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="470" y="260" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/><rect x="470" y="260" width="230" height="56" rx="16" fill="#10233F" opacity="0.1"/>
+<!-- Button disabled: "Continue" -->
+<rect x="720" y="260" width="230" height="56" rx="28.0" fill="#D8DDE5"/>
+<text x="835.0" y="294" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<!-- Button coral loading: "Continue" -->
+<rect x="970" y="260" width="230" height="56" rx="28.0" fill="url(#g-coral)" filter="url(#gl-coral)"/><rect x="971" y="261" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<circle cx="1085.0" cy="288.0" r="9" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.4"/><path d="M1085.0 279.0 a9 9 0 0 1 9 9" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+<text x="40" y="369" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Secondary</text>
+<!-- Button secondary: "Continue" -->
+<rect x="220" y="336" width="230" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="335.0" y="370" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="220" y="336" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="470" y="336" width="230" height="56" rx="16" fill="#EAF0FF"/><!-- Button secondary: "Continue" -->
+<rect x="470" y="336" width="230" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="585.0" y="370" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="470" y="336" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button secondary-disabled: "Continue" -->
+<rect x="720" y="336" width="230" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="835.0" y="370" text-anchor="middle" font-size="16" font-weight="700" fill="#B8C0CB" xml:space="preserve">Continue</text>
+<!-- Button secondary loading: "Continue" -->
+<rect x="970" y="336" width="230" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<circle cx="1085.0" cy="364.0" r="9" fill="none" stroke="#5B7CFA" stroke-opacity="0.35" stroke-width="2.4"/><path d="M1085.0 355.0 a9 9 0 0 1 9 9" fill="none" stroke="#5B7CFA" stroke-width="2.4" stroke-linecap="round"/>
+<text x="40" y="445" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Ghost</text>
+<!-- Button ghost: "Continue" -->
+<rect x="220" y="412" width="230" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<text x="335.0" y="446" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="220" y="412" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="470" y="412" width="230" height="56" rx="16" fill="#EAF0FF"/><!-- Button ghost: "Continue" -->
+<rect x="470" y="412" width="230" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<text x="585.0" y="446" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="470" y="412" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button ghost-disabled: "Continue" -->
+<rect x="720" y="412" width="230" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<text x="835.0" y="446" text-anchor="middle" font-size="16" font-weight="700" fill="#B8C0CB" xml:space="preserve">Continue</text>
+<!-- Button ghost loading: "Continue" -->
+<rect x="970" y="412" width="230" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<circle cx="1085.0" cy="440.0" r="9" fill="none" stroke="#5B7CFA" stroke-opacity="0.35" stroke-width="2.4"/><path d="M1085.0 431.0 a9 9 0 0 1 9 9" fill="none" stroke="#5B7CFA" stroke-width="2.4" stroke-linecap="round"/>
+<text x="40" y="521" text-anchor="start" font-size="14" font-weight="600" fill="#10233F" xml:space="preserve">Destructive</text>
+<!-- Button destructive: "Continue" -->
+<rect x="220" y="488" width="230" height="56" rx="28.0" fill="#D9363E" filter="url(#gl-red)"/><rect x="221" y="489" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="335.0" y="522" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="220" y="488" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button destructive: "Continue" -->
+<rect x="470" y="488" width="230" height="56" rx="28.0" fill="#D9363E" filter="url(#gl-red)"/><rect x="471" y="489" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="585.0" y="522" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<rect class="hit" data-hit="btn:Continue" x="470" y="488" width="230" height="56" fill="#FFFFFF" fill-opacity="0"/><rect x="470" y="488" width="230" height="56" rx="16" fill="#10233F" opacity="0.1"/>
+<!-- Button disabled: "Continue" -->
+<rect x="720" y="488" width="230" height="56" rx="28.0" fill="#D8DDE5"/>
+<text x="835.0" y="522" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Continue</text>
+<!-- Button destructive loading: "Continue" -->
+<rect x="970" y="488" width="230" height="56" rx="28.0" fill="#D9363E" filter="url(#gl-red)"/><rect x="971" y="489" width="228" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<circle cx="1085.0" cy="516.0" r="9" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.4"/><path d="M1085.0 507.0 a9 9 0 0 1 9 9" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+<text x="40" y="604" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Input</text>
+<text x="40" y="642" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Empty</text>
+<!-- Input (empty) -->
+<rect x="40" y="652" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<text x="56" y="686.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">Your nickname</text>
+<rect class="hit" data-hit="input:Your nickname" x="40" y="652" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="440" y="642" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Focused</text>
+<!-- Input (focused) -->
+<rect x="440" y="652" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="441.0" y="653.0" width="340" height="54" rx="28.0" fill="none" stroke="#5B7CFA" stroke-width="2"/>
+<text x="456" y="686.0" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">Aarav</text>
+<rect x="501.9" y="669.0" width="2" height="22" rx="1" fill="#5B7CFA"/>
+<rect class="hit" data-hit="input:Your nickname" x="440" y="652" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="840" y="642" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Filled</text>
+<!-- Input (filled) -->
+<rect x="840" y="652" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="856" y="686.0" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">Aarav_22</text>
+<rect class="hit" data-hit="input:Your nickname" x="840" y="652" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<text x="40" y="762" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Error</text>
+<!-- Input (error) -->
+<rect x="40" y="772" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="41.0" y="773.0" width="340" height="54" rx="28.0" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="56" y="806.0" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">Aarav 98765</text>
+<rect class="hit" data-hit="input:Your nickname" x="40" y="772" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<g transform="translate(40 835.5) scale(0.8333)" fill="none" stroke="#D9363E" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></g><text x="68" y="849.1" text-anchor="start" font-size="13" font-weight="500" fill="#D9363E" xml:space="preserve">That number doesn't look right.</text>
+<text x="440" y="762" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Disabled</text>
+<!-- Input (disabled) -->
+<rect x="440" y="772" width="342" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0.35" stroke="#FFFFFF" stroke-opacity="0.6"/>
+<text x="456" y="806.0" text-anchor="start" font-size="16" font-weight="500" fill="#B8C0CB" xml:space="preserve">12 / 03 / 1998</text>
+<text x="40" y="888" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Phone input</text>
+<g transform="translate(16 808)"><!-- Input (empty) -->
+<rect x="24" y="104" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<!-- Country flag image asset (IN) --><g><clipPath id="fl36124"><rect x="36" y="124" width="24" height="16" rx="3"/></clipPath><g clip-path="url(#fl36124)"><rect x="36" y="124" width="24" height="5.34" fill="#FF9933"/><rect x="36" y="129.33" width="24" height="5.34" fill="#FFFFFF"/><rect x="36" y="134.66" width="24" height="5.34" fill="#138808"/><circle cx="48" cy="132" r="2" fill="none" stroke="#000080" stroke-width="0.8"/></g><rect x="36.25" y="124.25" width="23.5" height="15.5" rx="3" fill="none" stroke="#E2E7EF" stroke-width="0.5"/></g><text x="68" y="138" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">+91</text><g transform="translate(96 122) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g><rect x="128" y="118" width="1" height="28" fill="#E2E7EF"/><!-- Country segment → country picker sheet (state of 02) -->
+<text x="140" y="138.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">98765 43210</text>
+<rect class="hit" data-hit="input:98765 43210" x="24" y="104" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/><rect class="hit" data-hit="country" x="24" y="104" width="108" height="56" fill="#FFFFFF" fill-opacity="0"/></g><g transform="translate(416 808)"><!-- Input (focused) -->
+<rect x="24" y="104" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="25.0" y="105.0" width="340" height="54" rx="28.0" fill="none" stroke="#5B7CFA" stroke-width="2"/>
+<!-- Country flag image asset (IN) --><g><clipPath id="fl36124"><rect x="36" y="124" width="24" height="16" rx="3"/></clipPath><g clip-path="url(#fl36124)"><rect x="36" y="124" width="24" height="5.34" fill="#FF9933"/><rect x="36" y="129.33" width="24" height="5.34" fill="#FFFFFF"/><rect x="36" y="134.66" width="24" height="5.34" fill="#138808"/><circle cx="48" cy="132" r="2" fill="none" stroke="#000080" stroke-width="0.8"/></g><rect x="36.25" y="124.25" width="23.5" height="15.5" rx="3" fill="none" stroke="#E2E7EF" stroke-width="0.5"/></g><text x="68" y="138" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">+91</text><g transform="translate(96 122) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g><rect x="128" y="118" width="1" height="28" fill="#E2E7EF"/><!-- Country segment → country picker sheet (state of 02) -->
+<text x="140" y="138.0" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">98765 43210</text>
+<rect x="241.2" y="121.0" width="2" height="22" rx="1" fill="#5B7CFA"/>
+<rect class="hit" data-hit="input:98765 43210" x="24" y="104" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/><rect class="hit" data-hit="country" x="24" y="104" width="108" height="56" fill="#FFFFFF" fill-opacity="0"/></g><g transform="translate(816 808)"><!-- Input (error) -->
+<rect x="24" y="104" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="25.0" y="105.0" width="340" height="54" rx="28.0" fill="none" stroke="#D9363E" stroke-width="2"/>
+<!-- Country flag image asset (IN) --><g><clipPath id="fl36124"><rect x="36" y="124" width="24" height="16" rx="3"/></clipPath><g clip-path="url(#fl36124)"><rect x="36" y="124" width="24" height="5.34" fill="#FF9933"/><rect x="36" y="129.33" width="24" height="5.34" fill="#FFFFFF"/><rect x="36" y="134.66" width="24" height="5.34" fill="#138808"/><circle cx="48" cy="132" r="2" fill="none" stroke="#000080" stroke-width="0.8"/></g><rect x="36.25" y="124.25" width="23.5" height="15.5" rx="3" fill="none" stroke="#E2E7EF" stroke-width="0.5"/></g><text x="68" y="138" text-anchor="start" font-size="15" font-weight="500" fill="#10233F" xml:space="preserve">+91</text><g transform="translate(96 122) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g><rect x="128" y="118" width="1" height="28" fill="#E2E7EF"/><!-- Country segment → country picker sheet (state of 02) -->
+<text x="140" y="138.0" text-anchor="start" font-size="16" font-weight="500" fill="#10233F" xml:space="preserve">98765 4321</text>
+<rect class="hit" data-hit="input:98765 43210" x="24" y="104" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/><rect class="hit" data-hit="country" x="24" y="104" width="108" height="56" fill="#FFFFFF" fill-opacity="0"/></g>
+<text x="40" y="1018" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">OTP field (box 50x56, radius 14, gap 8)</text>
+<text x="40" y="1048" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Empty</text>
+<g transform="translate(15 1058)"><!-- OTP field: 6 boxes 50x56 r14 gap 8 -->
+<rect x="25" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="26.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#5B7CFA" stroke-width="2"/>
+<rect x="49" y="17" width="2" height="22" rx="1" fill="#5B7CFA"/>
+<rect x="83" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="141" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="199" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="257" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="315" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect class="hit" data-hit="otp" x="25" y="0" width="340" height="56" fill="#FFFFFF" fill-opacity="0"/></g>
+<text x="440" y="1048" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Focused / partly filled</text>
+<g transform="translate(415 1058)"><!-- OTP field: 6 boxes 50x56 r14 gap 8 -->
+<rect x="25" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="50" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">4</text>
+<rect x="83" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="108" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">8</text>
+<rect x="141" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="166" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">2</text>
+<rect x="199" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="200.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#5B7CFA" stroke-width="2"/>
+<rect x="223" y="17" width="2" height="22" rx="1" fill="#5B7CFA"/>
+<rect x="257" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="315" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect class="hit" data-hit="otp" x="25" y="0" width="340" height="56" fill="#FFFFFF" fill-opacity="0"/></g>
+<text x="840" y="1048" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Filled</text>
+<g transform="translate(815 1058)"><!-- OTP field: 6 boxes 50x56 r14 gap 8 -->
+<rect x="25" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="50" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">4</text>
+<rect x="83" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="108" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">8</text>
+<rect x="141" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="166" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">2</text>
+<rect x="199" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="224" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">9</text>
+<rect x="257" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="282" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">1</text>
+<rect x="315" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<text x="340" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">3</text>
+<rect class="hit" data-hit="otp" x="25" y="0" width="340" height="56" fill="#FFFFFF" fill-opacity="0"/></g>
+<text x="40" y="1148" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Error</text>
+<g transform="translate(15 1158)"><!-- OTP field: 6 boxes 50x56 r14 gap 8 -->
+<rect x="25" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="26.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="50" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">4</text>
+<rect x="83" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="84.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="108" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">8</text>
+<rect x="141" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="142.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="166" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">2</text>
+<rect x="199" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="200.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="224" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">1</text>
+<rect x="257" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="258.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="282" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">9</text>
+<rect x="315" y="0" width="50" height="56" rx="14" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="316.0" y="1.0" width="48" height="54" rx="14" fill="none" stroke="#D9363E" stroke-width="2"/>
+<text x="340" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#10233F" xml:space="preserve">3</text>
+<rect class="hit" data-hit="otp" x="25" y="0" width="340" height="56" fill="#FFFFFF" fill-opacity="0"/></g>
+<text x="440" y="1148" text-anchor="start" font-size="12" font-weight="500" fill="#66758A" xml:space="preserve">Disabled (lockout)</text>
+<g transform="translate(415 1158)"><!-- OTP field: 6 boxes 50x56 r14 gap 8 -->
+<rect x="25" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/>
+<rect x="83" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/>
+<rect x="141" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/>
+<rect x="199" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/>
+<rect x="257" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/>
+<rect x="315" y="0" width="50" height="56" rx="14" fill="#EEF1F5"/></g>
+</g>
+</svg>

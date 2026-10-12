@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" font-family="'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif">
+<title>Frndu – 12 Permissions Primer – Dialog Notifications Off (390 x 844)</title>
+<defs>
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap');</style>
+<clipPath id="screen"><rect width="390" height="844"/></clipPath>
+<filter id="sh-card" x="-30%" y="-40%" width="160%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5B7CFA" flood-opacity="0.08"/></filter>
+<filter id="sh-lg" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="-8" stdDeviation="24" flood-color="#10233F" flood-opacity="0.10"/></filter>
+<filter id="sh-sm" x="-30%" y="-50%" width="160%" height="220%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#10233F" flood-opacity="0.06"/></filter>
+<filter id="gl-blue" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B7CFA" flood-opacity="0.32"/></filter>
+<filter id="gl-coral" x="-30%" y="-60%" width="160%" height="260%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#E94B4B" flood-opacity="0.30"/></filter>
+<filter id="gl-red" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#D9363E" flood-opacity="0.30"/></filter>
+<filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+<linearGradient id="g-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.82"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.56"/></linearGradient>
+<linearGradient id="g-edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.35"/></linearGradient>
+<linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.82"/><stop offset="1" stop-color="#5B7CFA"/></linearGradient>
+<linearGradient id="g-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E94B4B" stop-opacity="0.84"/><stop offset="1" stop-color="#E94B4B"/></linearGradient>
+<linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4D6" stop-opacity="0"/><stop offset="0.55" stop-color="#FFF4D6" stop-opacity="0.85"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0.95"/></linearGradient>
+<radialGradient id="g-halo"><stop offset="0" stop-color="#5B7CFA" stop-opacity="0.20"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient>
+</defs>
+<g clip-path="url(#screen)">
+<rect width="390" height="844" fill="#FFF4D6"/>
+<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<!-- Scrim -->
+<rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.20"/><rect class="hit" data-hit="scrim" x="0" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Status bar (safe area 0-47) -->
+<text x="40" y="32" font-size="15" font-weight="600" fill="#10233F">9:41</text>
+<g fill="#10233F"><rect x="290" y="24" width="3" height="6" rx="1"/><rect x="295" y="21" width="3" height="9" rx="1"/><rect x="300" y="18" width="3" height="12" rx="1"/><rect x="305" y="15" width="3" height="15" rx="1"/><path d="M314 20 a10 10 0 0 1 14 0 l-2 2 a7 7 0 0 0 -10 0 Z M318 24 a4.5 4.5 0 0 1 6 0 l-3 3 Z"/><rect x="334" y="17" width="22" height="12" rx="3" fill="none" stroke="#10233F" stroke-width="1.2"/><rect x="336" y="19" width="16" height="8" rx="1.5" fill="#10233F"/><rect x="357.5" y="21" width="1.6" height="4" rx="0.8"/></g>
+<!-- BottomSheet (frosted) -->
+<path d="M0 83 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFF4D6" filter="url(#sh-lg)"/>
+<path d="M0 83 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFFFFF" fill-opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<rect class="hit" data-hit="sheet" x="0" y="59" width="390" height="785" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="175" y="67" width="40" height="4" rx="2" fill="#D8DDE5"/>
+<!-- Hero: permissions (illustration) --><ellipse cx="195" cy="153" rx="74" ry="54" fill="#EAF0FF" opacity="1.0" transform="rotate(0 195 153)"/><g transform="rotate(8 195.0 148.0)"><rect x="166" y="93" width="58" height="110" rx="12" fill="#FFFFFF" stroke="#5B7CFA" stroke-width="5"/><rect x="174" y="111" width="42" height="74" rx="7" fill="#FFF9EA"/><circle cx="195.0" cy="103" r="3" fill="#5B7CFA"/><rect x="183.0" y="191" width="24" height="4" rx="2" fill="#E2E7EF"/><!-- Logo mark (reference style) 40 --><g transform="translate(195 149) scale(0.2000) translate(-100 -82)"><clipPath id="lgA78"><ellipse cx="62" cy="86" rx="60" ry="52"/></clipPath><clipPath id="lgB79"><ellipse cx="140" cy="88" rx="58" ry="52"/></clipPath><ellipse cx="140" cy="88" rx="58" ry="52" fill="#5B7CFA"/><path d="M168 128 C176 140 184 146 196 150 C182 151 166 147 154 138 Z" fill="#5B7CFA"/><ellipse cx="62" cy="86" rx="60" ry="52" fill="#E94B4B"/><path d="M30 126 C24 138 16 144 4 148 C18 150 34 146 46 136 Z" fill="#E94B4B"/><g clip-path="url(#lgA78)"><ellipse cx="140" cy="88" rx="58" ry="52" fill="#FFFFFF" opacity="0.38"/></g><path d="M34 80 q8 -10 16 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M64 80 q8 -10 16 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M44 98 q14 14 28 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M122 84 q8 -10 16 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M150 84 q8 -10 16 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M132 102 q14 14 28 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/></g></g><circle cx="118" cy="115" r="22" fill="#FFFFFF" filter="url(#sh-card)"/><g transform="translate(107 104) scale(0.9167)" fill="none" stroke="#E94B4B" stroke-width="2.18" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></g><circle cx="276" cy="107" r="22" fill="#FFFFFF" filter="url(#sh-card)"/><g transform="translate(265 96) scale(0.9167)" fill="none" stroke="#5B7CFA" stroke-width="2.18" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></g><circle cx="282" cy="179" r="22" fill="#FFFFFF" filter="url(#sh-card)"/><g transform="translate(271 168) scale(0.9167)" fill="none" stroke="#E6A21A" stroke-width="2.18" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></g>
+<text x="195" y="239.3" text-anchor="middle" font-size="26" font-weight="700" fill="#10233F" letter-spacing="-0.4" xml:space="preserve">Let's get you set up</text>
+<text x="195" y="272.2" text-anchor="middle" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">We'll ask for three permissions so calls</text>
+<text x="195" y="294.2" text-anchor="middle" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">and updates work.</text>
+<rect x="24.75" y="321.75" width="340.5" height="70.5" rx="16" fill="#FFFFFF" stroke="#EEF1F5" stroke-width="1.5"/>
+<circle cx="64" cy="357" r="24" fill="#FDE8E8"/><g transform="translate(52 345)" fill="none" stroke="#E94B4B" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></g>
+<text x="104" y="351" text-anchor="start" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">Camera</text>
+<text x="104" y="370.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">So you and your host can see each other</text>
+<text x="104" y="389.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">on video calls.</text>
+<rect x="24.75" y="401.75" width="340.5" height="70.5" rx="16" fill="#FFFFFF" stroke="#EEF1F5" stroke-width="1.5"/>
+<circle cx="64" cy="437" r="24" fill="#EAF0FF"/><g transform="translate(52 425)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></g>
+<text x="104" y="431" text-anchor="start" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">Microphone</text>
+<text x="104" y="450.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">So you can talk on voice and video calls.</text>
+<rect x="24.75" y="481.75" width="340.5" height="70.5" rx="16" fill="#FFFFFF" stroke="#EEF1F5" stroke-width="1.5"/>
+<circle cx="64" cy="517" r="24" fill="#FFF9EA"/><g transform="translate(52 505)" fill="none" stroke="#E6A21A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></g>
+<text x="104" y="511" text-anchor="start" font-size="15" font-weight="700" fill="#10233F" xml:space="preserve">Notifications</text>
+<text x="104" y="530.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">So you don't miss incoming calls and</text>
+<text x="104" y="549.1" text-anchor="start" font-size="13" font-weight="400" fill="#66758A" xml:space="preserve">messages.</text>
+<!-- Button primary: "Grant Permissions" → system prompts one by one, then 13 -->
+<rect x="24" y="670" width="342" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="25" y="671" width="340" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="108.1" y="704" text-anchor="start" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Grant Permissions</text>
+<g transform="translate(261.9 688) scale(0.8333)" fill="none" stroke="#FFFFFF" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></g>
+<rect class="hit" data-hit="btn:Grant Permissions" x="24" y="670" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button ghost: "Not now" → 13 -->
+<rect x="24" y="738" width="342" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Not now</text>
+<rect class="hit" data-hit="btn:Not now" x="24" y="738" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Scrim -->
+<rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.32"/><rect class="hit" data-hit="scrim" x="0" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Dialog (frosted) -->
+<rect x="24" y="251" width="342" height="342" rx="24" fill="#FFF4D6" filter="url(#sh-lg)"/>
+<rect x="24" y="251" width="342" height="342" rx="24" fill="#FFFFFF" fill-opacity="0.75" stroke="#FFFFFF" stroke-width="1.2"/>
+<rect class="hit" data-hit="dialog" x="24" y="251" width="342" height="342" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="48" y="275" width="48" height="48" rx="12" fill="#EAF0FF"/><g transform="translate(60.0 287.0)" fill="none" stroke="#5B7CFA" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></g>
+<text x="48" y="360.2" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Notifications are off</text>
+<text x="48" y="392.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">Turn them on in Settings so you don't</text>
+<text x="48" y="414.2" text-anchor="start" font-size="15" font-weight="400" fill="#66758A" xml:space="preserve">miss calls.</text>
+<!-- Button primary: "Open Settings" → OS settings -->
+<rect x="48" y="445" width="294" height="56" rx="28.0" fill="url(#g-blue)" filter="url(#gl-blue)"/><rect x="49" y="446" width="292" height="28.0" rx="27.0" fill="#FFFFFF" opacity="0.10"/>
+<text x="195.0" y="479" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF" xml:space="preserve">Open Settings</text>
+<rect class="hit" data-hit="btn:Open Settings" x="48" y="445" width="294" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<!-- Button ghost: "Not now" → close dialog -->
+<rect x="48" y="513" width="294" height="56" rx="28.0" fill="#FFFFFF" fill-opacity="0"/>
+<text x="195.0" y="547" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Not now</text>
+<rect class="hit" data-hit="btn:Not now" x="48" y="513" width="294" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/>
+</g>
+</svg>
