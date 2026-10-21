@@ -108,6 +108,25 @@ button:focus-visible { outline:2px solid var(--blue); outline-offset:2px; }
 #stepper { display:flex; align-items:center; gap:8px; margin-top:4px; }
 #stepper .count { font-size:12px; color:var(--slate); font-weight:600; min-width:64px; text-align:center; }
 #play[aria-pressed=true] { background:#EAF0FF; border-color:var(--blue); color:var(--blue); }
+/* Background opacity control (client update 21 Oct): preview the Blue / Coral cloud strength on every frame */
+#cloudBtn .val { color:var(--slate); font-weight:500; margin-left:6px; font-variant-numeric:tabular-nums; }
+#cloudBtn[aria-expanded=true], #cloudBtn.custom { background:#EAF0FF; border-color:var(--blue); color:var(--blue); }
+#cloudPanel { position:fixed; top:64px; right:16px; width:304px; z-index:40; background:#fff; border:1px solid var(--line); border-radius:16px;
+  box-shadow:0 12px 40px rgba(16,35,63,.18); padding:16px; }
+#cloudPanel[hidden] { display:none; }
+#cloudPanel .head { display:flex; align-items:center; justify-content:space-between; }
+#cloudPanel h2 { font-size:15px; margin:0; }
+#cloudPanel .x { border:0; padding:4px 10px; font-size:20px; line-height:1; }
+#cloudPanel .row { display:flex; align-items:center; justify-content:space-between; font-size:13px; font-weight:600; margin:14px 0 6px; }
+#cloudPanel .row span { display:flex; align-items:center; gap:8px; }
+#cloudPanel .sw { width:12px; height:12px; border-radius:6px; display:inline-block; }
+#cloudPanel output { color:var(--slate); font-variant-numeric:tabular-nums; }
+#cloudPanel input[type=range] { width:100%; margin:0; }
+#clB { accent-color:#5B7CFA; } #clC { accent-color:#E94B4B; }
+#cloudPanel .acts { display:flex; gap:8px; margin-top:16px; }
+#cloudPanel .acts button { flex:1; }
+#cloudPanel .note { font-size:12px; line-height:17px; color:var(--slate); margin:12px 0 0; }
+@media (max-width: 1240px) { header .hint.long { display:none; } }
 """
 
 JS = r"""
@@ -117,16 +136,61 @@ const blobs = {};
 const PHOTO_RE = /https:\/\/frndu-prototype\.vercel\.app\/img\/([\w-]+\.jpg)/g;
 const PHOTOS = {};
 const withPhotos = (svg) => svg.replace(PHOTO_RE, (m, f) => PHOTOS[f] || m);
-const url = (name) => blobs[name] || (blobs[name] = URL.createObjectURL(new Blob([withPhotos(FRAMES[name] || extSvg(name))], { type: 'image/svg+xml' })));
+
+// Background clouds: the frames carry the default opacities (cl-* classes). The Background control previews other values:
+// Run mode (inline SVG) follows the CSS variables live; canvas images are SVG files, so they get a literal <style> injected.
+const CLOUD_KEY = 'frndu-clouds';
+const pct = (v) => Math.round(v * 100);
+let clouds = (() => {
+  try { const v = JSON.parse(localStorage.getItem(CLOUD_KEY)); if (v && v.b >= 0 && v.b <= 1 && v.c >= 0 && v.c <= 1) return v; } catch (e) { /* no saved values */ }
+  return { b: CLOUDS.def.b, c: CLOUDS.def.c };
+})();
+const cloudsDefault = () => pct(clouds.b) === pct(CLOUDS.def.b) && pct(clouds.c) === pct(CLOUDS.def.c);
+const cloudCss = () => Object.entries(CLOUDS.shapes).map(([cls, [k, share]]) => `.${cls}{opacity:${(clouds[k] * share).toFixed(3)}}`).join('');
+const withClouds = (svg) => (cloudsDefault() ? svg : svg.replace('<defs>', `<defs><style>${cloudCss()}</style>`));
+
+const url = (name) => blobs[name] || (blobs[name] = URL.createObjectURL(new Blob([withClouds(withPhotos(FRAMES[name] || extSvg(name)))], { type: 'image/svg+xml' })));
+function refreshImages() {   // rebuild every canvas image (after photos load or the cloud opacity changes)
+  for (const k in blobs) { URL.revokeObjectURL(blobs[k]); delete blobs[k]; }
+  document.querySelectorAll('img[data-src]').forEach((im) => { if (im.src) im.src = url(im.dataset.src); });
+}
 setTimeout(function preloadPhotos() {  // deferred: FRAMES is declared further down
   const files = [...new Set(Object.values(FRAMES).join('').match(PHOTO_RE) || [])];
   Promise.all(files.map((u) => fetch(u).then((r) => r.blob()).then((b) => new Promise((res) => {
     const fr = new FileReader(); fr.onload = () => { PHOTOS[u.split('/').pop()] = fr.result; res(); }; fr.readAsDataURL(b);
-  })).catch(() => {}))).then(() => {
-    for (const k in blobs) { URL.revokeObjectURL(blobs[k]); delete blobs[k]; }
-    document.querySelectorAll('img[data-src]').forEach((im) => { if (im.src) im.src = url(im.dataset.src); });
-  });
+  })).catch(() => {}))).then(refreshImages);
 }, 0);
+
+let cloudTimer = null;
+function applyClouds(refresh) {
+  const r = document.documentElement.style;
+  r.setProperty('--cl-b', clouds.b); r.setProperty('--cl-c', clouds.c);
+  $('#clB').value = pct(clouds.b); $('#clC').value = pct(clouds.c);
+  $('#clBv').textContent = `${pct(clouds.b)}%`; $('#clCv').textContent = `${pct(clouds.c)}%`;
+  $('#cloudVal').textContent = `${pct(clouds.b)} · ${pct(clouds.c)}`;
+  $('#cloudBtn').classList.toggle('custom', !cloudsDefault());
+  try { if (cloudsDefault()) localStorage.removeItem(CLOUD_KEY); else localStorage.setItem(CLOUD_KEY, JSON.stringify(clouds)); } catch (e) { /* private mode */ }
+  if (refresh) { clearTimeout(cloudTimer); cloudTimer = setTimeout(refreshImages, 300); }
+}
+function toggleCloudPanel(open) {
+  const p = $('#cloudPanel');
+  const on = open === undefined ? p.hidden : open;
+  p.hidden = !on;
+  $('#cloudBtn').setAttribute('aria-expanded', String(on));
+  if (on) $('#clB').focus(); else if (p.contains(document.activeElement)) $('#cloudBtn').focus();
+}
+function initCloudPanel() {
+  $('#cloudNote').textContent = `Preview only. The frames ship at Blue ${pct(CLOUDS.def.b)}% · Coral ${pct(CLOUDS.def.c)}%. `
+    + `Before = the 11 Oct look (${pct(CLOUDS.before.b)}% · ${pct(CLOUDS.before.c)}%). Your values stay in this browser.`;
+  $('#cloudBtn').onclick = () => toggleCloudPanel();
+  $('#cloudClose').onclick = () => toggleCloudPanel(false);
+  $('#clB').addEventListener('input', (e) => { clouds = { b: e.target.value / 100, c: clouds.c }; applyClouds(true); });
+  $('#clC').addEventListener('input', (e) => { clouds = { b: clouds.b, c: e.target.value / 100 }; applyClouds(true); });
+  $('#clBefore').onclick = () => { clouds = { b: CLOUDS.before.b, c: CLOUDS.before.c }; applyClouds(true); };
+  $('#clReset').onclick = () => { clouds = { b: CLOUDS.def.b, c: CLOUDS.def.c }; applyClouds(true); };
+  $('#cloudPanel').addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.stopPropagation(); toggleCloudPanel(false); } });
+  applyClouds(false);
+}
 const screenOf = (name) => name.split('_')[0];
 const stateOf = (name) => name.slice(name.lastIndexOf('_') + 1);
 
@@ -372,7 +436,7 @@ function initRunEvents() {
   $('#hot').onclick = () => { showHot = !showHot; $('#hot').setAttribute('aria-pressed', showHot); $('#screen').classList.toggle('show', showHot); };
   window.addEventListener('resize', () => { if ($('#run').classList.contains('on')) fitPhone(); });
   window.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'SELECT') return;
+    if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT' || e.target.closest('#cloudPanel')) return;
     if (!$('#run').classList.contains('on')) return;
     if (e.key === 'Escape') { if (playing) togglePlay(); stopRun(); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
@@ -388,6 +452,7 @@ function initRunEvents() {
 
 // ---------- boot ----------
 window.addEventListener('DOMContentLoaded', () => {
+  initCloudPanel();
   $('#scrsel').innerHTML = LAYOUT.flatMap((r) => r.screens).filter((s) => SCREENS[s]).map((s) => `<option value="${s}">${s} · ${SCREENS[s].name}</option>`).join('');
   ORDER = LAYOUT.flatMap((r) => r.screens).filter((s) => SCREENS[s]).flatMap((s) => SCREENS[s].states.map((st) => frameName(s, st)));
   buildCanvas(); fit(); initCanvasEvents(); initRunEvents();
@@ -413,9 +478,19 @@ HTML = """<!doctype html>
   <div class="seg" role="group" aria-label="Mode"><button id="modeCanvas" aria-pressed="true">Canvas</button><button id="modeRun" aria-pressed="false">Prototype</button></div>
   <button id="runBtn" class="primary">▶ Run</button>
   <span class="sp"></span>
-  <span class="hint">Drag or scroll to pan · ⌘/Ctrl + scroll or pinch to zoom · click any frame to run from it</span>
+  <span class="hint long">Drag or scroll to pan · ⌘/Ctrl + scroll or pinch to zoom · click any frame to run from it</span>
+  <button id="cloudBtn" aria-expanded="false" aria-controls="cloudPanel">◐ Background<span class="val" id="cloudVal"></span></button>
   <button id="zout" aria-label="Zoom out">−</button><span id="zoomv" class="hint" style="min-width:40px;text-align:center">40%</span><button id="zin" aria-label="Zoom in">+</button><button id="zfit">Fit</button>
 </header>
+<div id="cloudPanel" role="dialog" aria-labelledby="cloudTitle" hidden>
+  <div class="head"><h2 id="cloudTitle">Background opacity</h2><button class="x" id="cloudClose" aria-label="Close background opacity">×</button></div>
+  <label class="row" for="clB"><span><i class="sw" style="background:#5B7CFA"></i>Blue · top right</span><output id="clBv" for="clB"></output></label>
+  <input id="clB" type="range" min="0" max="100" step="1">
+  <label class="row" for="clC"><span><i class="sw" style="background:#E94B4B"></i>Coral · bottom left</span><output id="clCv" for="clC"></output></label>
+  <input id="clC" type="range" min="0" max="100" step="1">
+  <div class="acts"><button id="clBefore">Before</button><button id="clReset" class="primary">Reset</button></div>
+  <p class="note" id="cloudNote"></p>
+</div>
 <div id="viewport"><div id="world"></div></div>
 <div id="run">
   <aside id="side">
@@ -437,6 +512,7 @@ const FRAMES = __FRAMES__;
 const SCREENS = __SCREENS__;
 const SHEETS = __SHEETS__;
 const NOTES = __NOTES__;
+const CLOUDS = __CLOUDS__;
 __JS__
 </script>
 </body></html>
@@ -447,12 +523,22 @@ def js_json(o):
     return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
 
+def cloud_bits():
+    """Background-cloud defaults + one CSS rule per cloud shape, so Run mode follows --cl-b / --cl-c live."""
+    from lib import CLOUD_DEFAULT, CLOUD_BEFORE, CLOUD_SHAPES
+    data = {'def': CLOUD_DEFAULT, 'before': CLOUD_BEFORE, 'shapes': {k: list(v) for k, v in CLOUD_SHAPES.items()}}
+    css = (f':root {{ --cl-b:{CLOUD_DEFAULT["b"]}; --cl-c:{CLOUD_DEFAULT["c"]}; }}\n'
+           + '\n'.join(f'#screen .{cls} {{ opacity:calc(var(--cl-{k}) * {share}); }}' for cls, (k, share) in CLOUD_SHAPES.items()) + '\n')
+    return data, css
+
+
 def main():
     frames, screens, sheets, notes = collect()
     flow = open(os.path.join(HERE, 'flow.js')).read()
-    html = (HTML.replace('__CSS__', CSS).replace('__FLOW__', flow).replace('__FRAMES__', js_json(frames))
+    clouds, cloud_css = cloud_bits()
+    html = (HTML.replace('__CSS__', CSS + cloud_css).replace('__FLOW__', flow).replace('__FRAMES__', js_json(frames))
             .replace('__SCREENS__', js_json(screens)).replace('__SHEETS__', js_json(sheets))
-            .replace('__NOTES__', js_json(notes)).replace('__JS__', JS))
+            .replace('__NOTES__', js_json(notes)).replace('__CLOUDS__', js_json(clouds)).replace('__JS__', JS))
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, 'w') as f:
         f.write(html)

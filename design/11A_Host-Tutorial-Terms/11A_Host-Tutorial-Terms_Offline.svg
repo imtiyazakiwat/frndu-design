@@ -21,8 +21,8 @@
 <g clip-path="url(#screen)">
 <rect width="390" height="844" fill="#FFF4D6"/>
 <!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
-<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
-<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" class="cl-b1" opacity="0.50"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" class="cl-b2" opacity="0.30"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" class="cl-c1" opacity="0.35"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" class="cl-c2" opacity="0.17"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
 <!-- PersistentBanner (offline) -->
 <rect x="24" y="107" width="342" height="62" rx="16" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
 <rect x="24" y="107" width="342" height="62" rx="16" fill="#EAF0FF" opacity="0.7"/>

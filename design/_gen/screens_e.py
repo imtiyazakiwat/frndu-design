@@ -101,8 +101,8 @@ def drawer(host=False, offset=0, pressed=None, nickname=None, switch_host=False,
          f'<!-- SideDrawer (owner: Girish) width {DW} = 75% -->',
          f'<g transform="translate({x0} 0)"><clipPath id="dwc"><rect width="{DW}" height="844"/></clipPath>'
          f'<rect x="0" y="0" width="{DW}" height="844" fill="{CREAM}" filter="url(#sh-lg)"/>' + hit(0, 0, DW, 844, 'sheet'),
-         f'<g clip-path="url(#dwc)"><g filter="url(#blur-xl)"><ellipse cx="240" cy="40" rx="140" ry="130" fill="{BLUE}" opacity="0.22"/>'
-         f'<ellipse cx="20" cy="820" rx="120" ry="110" fill="{CORAL}" opacity="0.14"/></g></g>',
+         f'<g clip-path="url(#dwc)"><g filter="url(#blur-xl)"><ellipse cx="240" cy="40" rx="140" ry="130" fill="{BLUE}" {cloud("cl-b3")}/>'
+         f'<ellipse cx="20" cy="820" rx="120" ry="110" fill="{CORAL}" {cloud("cl-c3")}/></g></g>',
          glass(12, 56, DW - 24, 236, 24)]
     o.append(avatar(60, 107, 72, photo=host, letter=None if host else nick[0]) + hit(24, 71, 72, 72, 'avatar'))
     nm = nick if tw(nick, 22, 700) < 240 else nick[:16] + '…'
@@ -337,70 +337,95 @@ def gen_131():
 LANGS14 = ['Hindi', 'English', 'Kannada', 'Tamil', 'Telugu', 'Marathi', 'Bengali']
 
 
-def filter_sheet(mode='All', langs=(), price=(30, 200), rating='Any', query=None, state='filters', reset=True):
-    top = 84
-    b = [text(24, top + 24, 'Search & filters', 'h3')[0], icon('x', 342, top + 22, NAVY) + hit(330, top + 10, 48, 48, 'close')]
-    y = top + 70
-    b.append(input_box(y, query, 'Search by name or Host ID', 'focused' if query else 'empty', left_icon='search'))
-    y += 56 + 24
-    body = []
-    if state == 'filters':
-        yy = y
-        body.append(t1(24, yy + 15, 'Call mode', 14, 600, NAVY))
-        body.append(seg_tabs(yy + 28, ['All', 'Video Only', 'Voice Only'], ['All', 'Video Only', 'Voice Only'].index(mode), key='mode'))
-        yy += 28 + 48 + 24
-        body.append(t1(24, yy + 15, 'Language', 14, 600, NAVY) + t1(366, yy + 15, 'Show all', 14, 600, BLUE, 'end') + hit(290, yy - 12, 76, 44, 'link:Show all'))
-        s, yy = chips_wrap(24, yy + 28, [(l, 'selected' if l in langs else 'unselected') for l in LANGS14])
-        body.append(s)
-        yy += 24
-        body.append(t1(24, yy + 15, 'Price per minute', 14, 600, NAVY) + t1(366, yy + 15, f'{price[0]} to {price[1]} ◆'.replace(' ◆', ''), 14, 600, NAVY, 'end'))
-        body.append(gem(round(366 - tw(f'{price[0]} to {price[1]}', 14, 600) - 22), yy + 1, 16).replace('translate(', 'translate(') if False else '')
-        tx = 40 + (price[0] - 30) / 170 * 310
-        tx2 = 40 + (price[1] - 30) / 170 * 310
-        body.append(f'<!-- Two-thumb slider -->'
-                    f'<rect x="40" y="{yy + 46}" width="310" height="4" rx="2" fill="{BORDER}"/><rect x="{tx:.0f}" y="{yy + 46}" width="{tx2 - tx:.0f}" height="4" rx="2" fill="{BLUE}"/>'
-                    f'<circle cx="{tx:.0f}" cy="{yy + 48}" r="12" fill="{WHITE}" stroke="{BLUE}" stroke-width="2"/><circle cx="{tx2:.0f}" cy="{yy + 48}" r="12" fill="{WHITE}" stroke="{BLUE}" stroke-width="2"/>'
-                    + hit(24, yy + 26, 342, 44, 'slider:price'))
-        yy += 76 + 24
-        body.append(t1(24, yy + 15, 'Host rating', 14, 600, NAVY))
-        s, yy = chips_wrap(24, yy + 28, [(r, 'selected' if r == rating else 'unselected') for r in ['Any', '4.0+', '4.5+', '4.8+']])
-        body.append(s)
-        yy += 24
-        body.append(t1(24, yy + 15, 'Recent searches', 14, 600, NAVY) + t1(366, yy + 15, 'Clear all', 14, 600, BLUE, 'end'))
-        yy += 28
-        for r in ['Priya', 'H-10932', 'Kannada hosts']:
-            body.append(icon('clock', 24, yy + 18, SLATE, 20) + t1(56, yy + 33, r, 15, 400, NAVY) + icon('x', 346, yy + 18, SLATE, 20)
-                        + hit(24, yy, 300, 56, f'recent:{r}') + hit(334, yy + 6, 44, 44, f'remove:{r}'))
-            yy += 56
-        b.append(clip_group('c14', y - 4, 646, '\n'.join(body)))
-        b.append(button(670, 'Apply Filters', 'primary', nav='13 (filtered feed)'))
-        b.append(button(738, 'Reset Filters', 'ghost' if reset else 'ghost-disabled', nav='reset'))
-    elif state == 'searching':
-        b.append(skeleton_rows(y, 5))
-    elif state == 'results':
-        for i, h in enumerate(HOSTS[:4]):
-            sb, _ = status_badge(0, 0, h['status'])
-            b.append(list_row(y + i * 72, h['name'], h['hid'], lead=lambda x, yy, h=h: f'<g>{host_photo(x, yy, 48, 48, h, r_all=24, scale=0.4)}</g>',
-                              right=lambda xr, yy, hh, h=h: status_badge(xr - tw(h['status'], 12, 600) - 28, yy + 24, h['status'])[0], key=f'host:{h["name"]}'))
-    elif state == 'noresults':
-        b.append(empty_state(y + 140, 'search', 'No hosts found.', 'Try another name or Host ID.'))
-    elif state in ('offline', 'error'):
-        b.append((offline_banner(y) if state == 'offline' else banner(y, "We couldn't load filters. Try again in a moment.", 'error'))[0])
-        b.append(button(738, 'Try again', 'secondary', nav='retry'))
-    return scrim() + sheet(top, '\n'.join(b))
+RECENT14 = ['Priya', 'H-10932', 'Ananya']
+AGES14 = ['18–24', '25–34', '35–44', '45+']   # Q2 age-group filter (client update 21 Oct)
+
+
+def recent_chip(x, y, label):
+    """Recent search: frosted pill with a clock icon; tap runs the search again."""
+    w = round(tw(label, 14, 600) + 50)
+    return (f'<!-- Recent search "{label}" → search again -->' + glass(x, y, w, 36, 18, shadow=False)
+            + icon('clock', x + 12, y + 10, SLATE, 16) + t1(x + 36, y + 23, label, 14, 600, NAVY) + hit(x, y, w, 36, f'recent:{label}')), w
+
+
+def filters_body(y, mode, langs, ages):
+    """Filter view of 14, from y down. Returns (svg, bottom). Client update 21 Oct: no price-per-minute or host-rating filter."""
+    o = [t1(24, y + 15, 'Recent searches', 14, 600, NAVY) + t1(366, y + 15, 'Clear all', 14, 600, BLUE, 'end')]
+    x = 24
+    for r in RECENT14:
+        s, w = recent_chip(x, y + 28, r)
+        o.append(s)
+        x += w + 8
+    y += 28 + 36 + 24
+    o.append(t1(24, y + 15, 'Call mode', 14, 600, NAVY))
+    o.append(seg_tabs(y + 28, ['All', 'Video Only', 'Voice Only'], ['All', 'Video Only', 'Voice Only'].index(mode), key='mode'))
+    y += 28 + 48 + 24
+    o.append(t1(24, y + 15, 'Language', 14, 600, NAVY) + t1(366, y + 15, 'Show all', 14, 600, BLUE, 'end') + hit(290, y - 12, 76, 44, 'link:Show all'))
+    s, y = chips_wrap(24, y + 28, [(l, 'selected' if l in langs else 'unselected') for l in LANGS14])
+    o.append(s)
+    if ages is not None:
+        y += 24
+        o.append('<!-- Q2 (Jan–Mar 2027): Age group filter, multi-select; not in the Launch build -->'
+                 + t1(24, y + 15, 'Age group', 14, 600, NAVY) + status_pill(24 + tw('Age group', 14, 600) + 8, y + 1, 'Q2')[0])
+        s, y = chips_wrap(24, y + 28, [(a, 'selected' if a in ages else 'unselected') for a in AGES14])
+        o.append(s.replace('data-hit="chip:', 'data-hit="age:'))
+    return '\n'.join(o), y
+
+
+def filter_sheet(mode='All', langs=(), query=None, state='filters', reset=True, ages=None):
+    """14 Search & filters. "Vertical scaling" (client update 21 Oct): the sheet is as tall as its content, so it shrinks
+    now that price and rating are gone, grows with extra sections (Q2 age group) and opens to 90% for search results."""
+    def body(top):
+        b = [text(24, top + 24, 'Search & filters', 'h3')[0], icon('x', 342, top + 22, NAVY) + hit(330, top + 10, 48, 48, 'close')]
+        y = top + 70
+        b.append(input_box(y, query, 'Search by name or Host ID', 'focused' if query else 'empty', left_icon='search'))
+        y += 56 + 24
+        if state == 'filters':
+            s, y = filters_body(y, mode, langs, ages)
+            b.append(s)
+            y += 24
+            b.append(button(y, 'Apply Filters', 'primary', nav='13 (filtered feed)'))
+            y += 56 + 12
+            b.append(button(y, 'Reset Filters', 'ghost' if reset else 'ghost-disabled', nav='reset'))
+            y += 56
+        elif state == 'searching':
+            b.append(skeleton_rows(y, 5))
+        elif state == 'results':
+            for i, h in enumerate(HOSTS[:4]):
+                b.append(list_row(y + i * 72, h['name'], h['hid'], lead=lambda x, yy, h=h: f'<g>{host_photo(x, yy, 48, 48, h, r_all=24, scale=0.4)}</g>',
+                                  right=lambda xr, yy, hh, h=h: status_badge(xr - tw(h['status'], 12, 600) - 28, yy + 24, h['status'])[0], key=f'host:{h["name"]}'))
+        elif state == 'noresults':
+            b.append(empty_state(y + 140, 'search', 'No hosts found.', 'Try another name or Host ID.'))
+        elif state in ('offline', 'error'):
+            s, y = (offline_banner(y) if state == 'offline' else banner(y, "We couldn't load filters. Try again in a moment.", 'error'))
+            b.append(s)
+            y += 24
+            b.append(button(y, 'Try again', 'secondary', nav='retry'))
+            y += 56
+        return '\n'.join(b), y
+    if state in ('searching', 'results', 'noresults'):
+        top = 84   # results get the tall sheet
+    else:
+        _, bottom = body(0)
+        top = 844 - 50 - bottom   # content height + 50 below the last button (home indicator area)
+    b, _ = body(top)
+    return scrim() + sheet(top, b)
 
 
 def gen_14():
     F, ID, N = '14_Filter-Search', '14', 'Filter-Search'
     base = home_body()
-    frame(F, ID, N, 'Default', base + filter_sheet(reset=False), note='90% height sheet')
-    frame(F, ID, N, 'Filters-Changed', base + filter_sheet('Video Only', ('Hindi', 'Kannada'), (40, 120), '4.5+'))
+    frame(F, ID, N, 'Default', base + filter_sheet(reset=False),
+          note='Client update 21 Oct: price-per-minute and host-rating filters removed. Sheet height follows its content (vertical scaling); results open at 90%')
+    frame(F, ID, N, 'Filters-Changed', base + filter_sheet('Video Only', ('Hindi', 'Kannada')))
     frame(F, ID, N, 'Nothing-Selected', base + filter_sheet(reset=False), note='Reset disabled')
     frame(F, ID, N, 'Searching', base + filter_sheet(query='Pri', state='searching'))
     frame(F, ID, N, 'Results', base + filter_sheet(query='Pri', state='results'), note='Results never include hosts without the selected mode')
     frame(F, ID, N, 'No-Results', base + filter_sheet(query='Zxq', state='noresults'))
     frame(F, ID, N, 'Offline', base + filter_sheet(state='offline'))
     frame(F, ID, N, 'Error', base + filter_sheet(state='error'))
+    frame(F, ID, N, 'Q2-Age-Group', base + filter_sheet('All', ('Hindi',), ages=('25–34',)),
+          note='Q2 (Jan–Mar 2027), not in the Launch build: filter hosts by age group, using the ages collected in 06. The sheet grows by one section')
 
 
 # ============================================================ 15 Matching Radar
@@ -461,8 +486,8 @@ def hp_content(h, reviews=True, longbio=False, mode_off=None, missing=False):
     p, _ = pill(24, 360, 'Play intro', NAVY, WHITE, 'play', op=0.4)
     o.append('<!-- Play intro (inline) -->' + p + hit(24, 356, 130, 40, 'btn:Play intro'))
     o.append(f'<path d="M0 440 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V2000 H0 Z" fill="{CREAM}"/>'
-             f'<g filter="url(#blur-xl)"><ellipse cx="380" cy="520" rx="90" ry="110" fill="{BLUE}" opacity="0.16"/>'
-             f'<ellipse cx="0" cy="1100" rx="110" ry="140" fill="{CORAL}" opacity="0.12"/></g>')
+             f'<g filter="url(#blur-xl)"><ellipse cx="380" cy="520" rx="90" ry="110" fill="{BLUE}" {cloud("cl-b4")}/>'
+             f'<ellipse cx="0" cy="1100" rx="110" ry="140" fill="{CORAL}" {cloud("cl-c4")}/></g>')
     y = 440
     o.append(t1(24, y + 26, h['name'], 26, 700, NAVY, ls=-0.4) + icon('badge-check', 30 + tw(h['name'], 26, 700), y + 6, BLUE))
     sb, w = status_badge(0, 0, h['status'])

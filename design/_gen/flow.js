@@ -101,22 +101,32 @@ const FLOW = {
                                    back: f('04', 'Locked-Re-entry') },
   [f('05', 'User-Selected')]: { 'card:Become a Host & Earn': f('05', 'Host-Selected'), 'btn:Continue': f('06', 'Empty'), back: f('04', 'Locked-Re-entry') },
   [f('05', 'Host-Selected')]: { 'card:Explore as User': f('05', 'User-Selected'), 'btn:Continue': f('05', 'Loading'), back: f('04', 'Locked-Re-entry') },
-  [f('05', 'Loading')]: { auto: [900, f('07', 'Loading')] },
+  [f('05', 'Loading')]: { auto: [900, f('06', 'Host-Empty')] },   // client update 21 Oct: hosts fill 06 (age, state) before 07
   [f('05', 'Error')]: { 'btn:Continue': f('05', 'Loading') },
   // 06 ---------------------------------------------------------------
   [f('06', 'Empty')]: { avatar: f('06', 'Photo-Sheet'), 'link:Add photo': f('06', 'Photo-Sheet'),
-                        'input:Your nickname': f('06', 'Keyboard-Nickname'), 'input:DD / MM / YYYY': f('06', 'Date-Picker') },
+                        'input:Your nickname': f('06', 'Keyboard-Nickname'), 'input:DD / MM / YYYY': f('06', 'Date-Picker'),
+                        'input:Select your state': f('06', 'State-Picker') },
   [f('06', 'Keyboard-Nickname')]: { keyboard: f('06', 'Partly-Filled'), auto: [1500, f('06', 'Partly-Filled')] },
   [f('06', 'Partly-Filled')]: { avatar: f('06', 'Photo-Sheet'), 'link:Add photo': f('06', 'Photo-Sheet'),
-                                'input:DD / MM / YYYY': f('06', 'Date-Picker'), 'input:Your nickname': f('06', 'Nickname-At-Limit') },
+                                'input:DD / MM / YYYY': f('06', 'Date-Picker'), 'input:Your nickname': f('06', 'Nickname-At-Limit'),
+                                'input:Select your state': f('06', 'State-Picker') },
   [f('06', 'Photo-Sheet')]: { 'photo:Take photo': f('06', 'Crop'), 'photo:Choose from gallery': f('06', 'Crop'), 'photo:Remove photo': 'BACK' },
   [f('06', 'Crop')]: { 'btn:Use photo': f('06', 'Avatar-Uploading'), close: f('06', 'Partly-Filled'), 'btn:Choose another': f('06', 'Crop') },
   [f('06', 'Avatar-Uploading')]: { auto: [1200, f('06', 'Date-Picker')] },
-  [f('06', 'Date-Picker')]: { 'btn:Done': f('06', 'Ready-Top') },
+  [f('06', 'Date-Picker')]: { 'btn:Done': f('06', 'State-Picker') },
+  // State picker (client update 21 Oct): any row selects the demo state and closes
+  [f('06', 'State-Picker')]: { 'state:*': f('06', 'Ready-Top'), 'input:Search states': null },
   [f('06', 'Ready-Top')]: { 'btn:Complete Setup': f('06', 'Saving'), down: f('06', 'Ready'), avatar: f('06', 'Photo-Sheet'),
-                            'input:DD / MM / YYYY': f('06', 'Date-Picker') },
+                            'input:DD / MM / YYYY': f('06', 'Date-Picker'), 'input:Select your state': f('06', 'State-Picker') },
   [f('06', 'Ready')]: { 'btn:Complete Setup': f('06', 'Saving'), up: f('06', 'Ready-Top'), 'link:Have a referral code?': f('06', 'Referral-Expanded'),
-                        'chip:*': f('06', 'Languages-Limit') },
+                        'chip:*': f('06', 'Languages-Limit'), 'input:Select your state': f('06', 'State-Picker') },
+  // Host variant of 06 (client update 21 Oct): any field fills the demo host profile; Continue → 07
+  [f('06', 'Host-Empty')]: { avatar: f('06', 'Host-Ready'), 'link:Add photo': f('06', 'Host-Ready'), 'input:Your nickname': f('06', 'Host-Ready'),
+                             'input:DD / MM / YYYY': f('06', 'Host-Ready'), 'input:Select your state': f('06', 'Host-Ready'),
+                             'chip:*': f('06', 'Host-Ready'), back: f('05', 'Host-Selected') },
+  [f('06', 'Host-Ready')]: { 'btn:Continue': f('07', 'Loading'), down: f('06', 'Host-Ready-Scrolled'), back: f('05', 'Host-Selected') },
+  [f('06', 'Host-Ready-Scrolled')]: { 'btn:Continue': f('07', 'Loading'), up: f('06', 'Host-Ready'), back: f('05', 'Host-Selected') },
   [f('06', 'Languages-Limit')]: { 'btn:Complete Setup': f('06', 'Saving'), 'chip:*': f('06', 'Ready'), up: f('06', 'Ready-Top') },
   [f('06', 'Referral-Expanded')]: { 'input:Enter code': f('06', 'Keyboard-Referral'), 'btn:Complete Setup': f('06', 'Saving'),
                                     'link:Have a referral code?': f('06', 'Ready') },
@@ -146,8 +156,8 @@ const FLOW = {
   [f('12', 'Dialog-Notifications-Off')]: { 'btn:Not now': f('13', 'Default'), scrim: null },
   // 07 ---------------------------------------------------------------
   [f('07', 'Loading')]: { auto: [900, f('07', 'Unselected')] },
-  [f('07', 'Unselected')]: { 'card:Video': f('07', 'Selected'), back: f('05', 'Host-Selected') },
-  [f('07', 'Selected')]: { 'card:Video': f('07', 'Unselected'), 'btn:Proceed with Selected Method': f('08', 'Ready'), back: f('05', 'Host-Selected') },
+  [f('07', 'Unselected')]: { 'card:Video': f('07', 'Selected'), back: f('06', 'Host-Ready') },
+  [f('07', 'Selected')]: { 'card:Video': f('07', 'Unselected'), 'btn:Proceed with Selected Method': f('08', 'Ready'), back: f('06', 'Host-Ready') },
   [f('07', 'Preselected-Variant')]: { 'btn:Proceed with Selected Method': f('08', 'Ready') },
   // 08 ---------------------------------------------------------------
   [f('08', 'Ready')]: { 'btn:Start': f('08', 'Recording'), back: f('07', 'Selected') },
@@ -286,11 +296,14 @@ put('13.1', ['Voice-Selected', 'Few-Hosts-Online'], { 'btn:Start Matching': f('1
 put('13.1', ['Loading-Prices'], { auto: [900, f('13.1', 'Video-Selected')] });
 
 // 14 Filter & Search
+// Client update 21 Oct: the price-per-minute slider and host-rating chips are gone; recent searches are chips.
 const filt = { close: f('13', 'Default'), scrim: f('13', 'Default'), sheet: null, 'input:Search by name or Host ID': f('14', 'Searching'),
-  'mode:*': f('14', 'Filters-Changed'), 'chip:*': f('14', 'Filters-Changed'), 'slider:price': f('14', 'Filters-Changed'),
-  'link:Show all': null, 'recent:*': f('14', 'Searching'), 'remove:*': null,
+  'mode:*': f('14', 'Filters-Changed'), 'chip:*': f('14', 'Filters-Changed'),
+  'link:Show all': null, 'recent:*': f('14', 'Searching'),
   'btn:Apply Filters': f('13', 'Filters-Active'), 'btn:Reset Filters': f('14', 'Nothing-Selected'), 'host:*': f('16', 'Loading') };
 put('14', ['Default', 'Filters-Changed', 'Nothing-Selected', 'Searching', 'Results', 'No-Results', 'Offline', 'Error'], filt);
+// Q2 preview (age-group filter): reachable from the side panel; chips stay put
+put('14', ['Q2-Age-Group'], Object.assign({}, filt, { 'chip:*': null, 'mode:*': null, 'age:*': null }));
 put('14', ['Searching'], { auto: [900, f('14', 'Results')] });
 put('14', ['No-Results'], { 'input:Search by name or Host ID': f('14', 'Default') });
 put('14', ['Offline', 'Error'], { 'btn:Try again': f('14', 'Default') });
@@ -349,6 +362,11 @@ put('19', ['Weak-Connection'], { 'btn:Switch to audio': f('20', 'Connected'), 'b
 put('19', ['Reconnecting'], { auto: [2500, f('19', 'Connected')] });
 put('19', ['Shield-Sheet'], { scrim: f('19', 'Connected'), sheet: null, 'row:Report or block': f('39', 'No-Reason'), 'row:Safety tips': f('59', 'Default') });
 put('19', ['Chat-Drawer'], { scrim: f('19', 'Connected'), close: f('19', 'Connected'), sheet: null, 'input:Type a message': null });
+// Face not detected (client update 21 Oct): the blur clears on its own once a face is back
+put('19', ['Host-Face-Not-Detected', 'Own-Face-Not-Detected'], Object.assign({}, vc, { auto: [3500, f('19', 'Connected')] }));
+// Host-side frames: only End Call is wired (the rest of 19 is drawn from the user side)
+put('19', ['Host-View-Caller-Face-Hidden', 'Host-View-Own-Face-Hidden'], { 'btn:End Call': f('23', 'Host-Summary'), 'btn:Mute': null,
+  'btn:Video': null, 'btn:Chat': null, 'btn:Flip camera': null, 'right:shield': null });
 
 // 20 Voice Call
 const vo = { 'btn:Mute': f('20', 'Muted'), 'btn:Speaker': f('20', 'Speaker-On'), 'btn:End Call': f('23', 'User-Rate'), 'banner:low': f('22', 'Voice-Call-Sheet') };
@@ -467,7 +485,9 @@ put('00.1', ['Open-User', 'Open-Scrolled', 'Row-Pressed', 'ID-Copied', 'Long-Nic
 
 // 40.1 Edit Profile
 put('40.1', ['Default', 'Editing', 'Nickname-Error', 'Locked-Field-Toast', 'Saved-Toast'], { back: f('40', 'Default'), avatar: f('40.1', 'Photo-Sheet'),
-  'link:Change photo': f('40.1', 'Photo-Sheet'), 'input:Your nickname': f('40.1', 'Editing'), 'locked:*': f('40.1', 'Locked-Field-Toast'), 'chip:*': f('40.1', 'Editing') });
+  'link:Change photo': f('40.1', 'Photo-Sheet'), 'input:Your nickname': f('40.1', 'Editing'), 'locked:*': f('40.1', 'Locked-Field-Toast'), 'chip:*': f('40.1', 'Editing'),
+  'input:Select your state': f('40.1', 'State-Sheet') });
+put('40.1', ['State-Sheet'], { scrim: f('40.1', 'Default'), close: f('40.1', 'Default'), sheet: null, 'state:*': f('40.1', 'Editing'), 'input:Search states': null });
 put('40.1', ['Editing'], { 'btn:Save': f('40.1', 'Saving'), 'input:Your nickname': f('40.1', 'Nickname-Error') });
 put('40.1', ['Nickname-Error'], { 'input:Your nickname': f('40.1', 'Editing') });
 put('40.1', ['Locked-Field-Toast'], { auto: [1500, f('40.1', 'Default')] });
@@ -627,7 +647,7 @@ put('00', ['Host-Tab-Earnings'], FLOW[f('32', 'Default')]);
 const EDGES = [
   ['01', '01.1', 'Language'], ['01', '02', 'Get Started'], ['02', '03', 'Send code'], ['03', '04', 'New user'],
   ['03', '03A', 'Deleting'], ['03', '06.1', 'Under 18'], ['04', '05', 'Female'], ['04', '06', 'Male'],
-  ['05', '06', 'User'], ['05', '07', 'Host'], ['06', '06A', 'Complete'], ['06A', '12', 'Photo / Skip'], ['06', '06.1', 'Under 18'],
+  ['05', '06', 'User or Host'], ['06', '07', 'Host'], ['06', '06A', 'Complete'], ['06A', '12', 'Photo / Skip'], ['06', '06.1', 'Under 18'],
   ['07', '08', 'Proceed'], ['08', '09A', 'Submit'], ['09A', '10', 'Continue'], ['10', '11', 'Decision'],
   ['11', '11A', 'Approved'], ['11', '07', 'Re-apply'], ['11A', '24', 'Proceed'], ['24', '25', 'Calls'],
   ['24', '26', 'Profile'], ['26', '09A', 'Edit languages'],

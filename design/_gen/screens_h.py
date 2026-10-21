@@ -167,27 +167,46 @@ def gen_40():
 
 
 # ============================================================ 40.1 Edit Profile
+def locked_card(y, rows):
+    """Read-only details (date of birth with age, gender): one frosted card, a lock on each row, tap → "can't be changed" toast."""
+    rh = 56
+    o = [card(24, y, 342, len(rows) * rh, shadow=False)]
+    for i, (lbl, val, extra) in enumerate(rows):
+        ry = y + i * rh
+        o.append(t1(40, ry + 22, lbl, 12, 500, SLATE) + t1(40, ry + 42, val, 15, 500, NAVY) + extra(50 + tw(val, 15, 500), ry + 37)
+                 + icon('lock', 330, ry + 19, TERT, 18) + hit(24, ry, 342, rh, f'locked:{lbl}'))
+        if i < len(rows) - 1:
+            o.append(f'<rect x="40" y="{ry + rh - 1}" width="310" height="1" fill="{CBORDER}"/>')
+    return '\n'.join(o), y + len(rows) * rh
+
+
 def s401(nick='Aarav', state='view', overlay='', err=None):
+    from screens_b import age_from
     o = []
-    y = 127
-    o.append(avatar(195, y + 48, 96, letter='A') + f'<circle cx="230" cy="{y + 84}" r="16" fill="{BLUE}" stroke="{WHITE}" stroke-width="2"/>'
-             + icon('camera', 222, y + 76, WHITE, 16) + hit(147, y, 96, 96, 'avatar'))
-    y += 96 + 12
+    y = 123
+    o.append(avatar(195, y + 36, 72, letter='A') + f'<circle cx="221" cy="{y + 62}" r="14" fill="{CREAM}"/><circle cx="221" cy="{y + 62}" r="12" fill="{BLUE}"/>'
+             + icon('camera', 214, y + 55, WHITE, 14) + hit(159, y, 72, 72, 'avatar'))
+    y += 72 + 4
     o.append(link_row(y, 'Change photo', 'photo sheet'))
-    y += 44 + 16
+    y += 44 + 8
     o.append(t1(24, y + 15, 'Nickname', 14, 600, NAVY) + t1(366, y + 15, f'{len(nick)}/20', 12, 500, SLATE, 'end'))
     o.append(input_box(y + 24, nick, 'Your nickname', 'error' if err else ('focused' if state == 'editing' else 'empty')))
     y += 24 + 56
     if err:
         s, y = err_msg(24, y + 8, err)
         o.append(s)
-    y += 20
-    for lbl, val in [('Date of birth', '12 / 03 / 2000'), ('Gender', 'Male')]:
-        o.append(t1(24, y + 15, lbl, 14, 600, NAVY))
-        o.append(input_box(y + 24, val, None, 'disabled', right_icon='lock') + hit(24, y + 24, 342, 56, f'locked:{lbl}'))
-        y += 24 + 56 + 16
-    o.append(text(24, y, "Date of birth and gender can't be changed.", 'notice')[0])
-    y += 19 + 24
+    y += 16
+    # State (NEW, client update 21 Oct): editable here, unlike date of birth and gender
+    o.append(t1(24, y + 15, 'State', 14, 600, NAVY))
+    o.append('<!-- State field → state picker sheet -->' + input_box(y + 24, 'Karnataka', 'Select your state', 'empty', right_icon='chevron-down', caret=False))
+    y += 24 + 56 + 16
+    dob = '12 / 03 / 1998'
+    age = age_from(dob)
+    s, y = locked_card(y, [('Date of birth', dob, lambda sx, cy: age_pill(sx + tw(f'Age {age}', 13, 600) + 20, cy, age, muted=True)),
+                           ('Gender', 'Male', lambda sx, cy: '')])
+    o.append(s)
+    o.append(text(24, y + 8, "Date of birth and gender can't be changed.", 'notice')[0])
+    y += 8 + 19 + 16
     o.append(t1(24, y + 15, 'Languages you speak', 14, 600, NAVY))
     s, y = chips_wrap(24, y + 28, [(l, 'selected' if l in ('Hindi', 'English') else 'unselected') for l in ['Hindi', 'English', 'Kannada', 'Tamil', 'Telugu']])
     o.append(s)
@@ -198,10 +217,13 @@ def s401(nick='Aarav', state='view', overlay='', err=None):
 
 def gen_401():
     F, ID, N = '40.1_Edit-Profile', '40.1', 'Edit-Profile'
-    frame(F, ID, N, 'Default', s401(), note='Save stays disabled until something changes. DOB and gender are locked (PRD §7.11)')
+    frame(F, ID, N, 'Default', s401(), note='Save stays disabled until something changes. DOB and gender are locked (PRD §7.11); '
+          'the age comes from the DOB. State is editable (client update 21 Oct)')
     frame(F, ID, N, 'Editing', s401('Aarav_K', 'editing'))
     frame(F, ID, N, 'Nickname-Error', s401('Aa', 'error', err='Use 3 to 20 letters, numbers or underscores.'))
     frame(F, ID, N, 'Locked-Field-Toast', s401(overlay=toast(666, "Date of birth can't be changed", 'lock')))
+    from screens_b import state_sheet
+    frame(F, ID, N, 'State-Sheet', s401(overlay=state_sheet(sel='Karnataka', start=10)), note='Same state picker as 06, opened on the current state')
     frame(F, ID, N, 'Photo-Sheet', s401(overlay=overflow_sheet([('Take photo', 'camera', NAVY, 'camera'), ('Choose from gallery', 'image', NAVY, 'gallery'),
                                                                  ('Remove photo', 'trash-2', ERROR, 'remove')])))
     frame(F, ID, N, 'Saving', s401('Aarav_K', 'saving'))

@@ -128,13 +128,38 @@ def call_pills(dark=True, dur='03:25', rate='80'):
     return '<!-- Call pills: duration + ticker -->' + p1 + p2
 
 
-def pip(cam_off=False):
+def pip(cam_off=False, img='rohan.jpg', blur=False):
+    """Local video PiP. blur = your face isn't detected, so the other side sees you blurred (client update 21 Oct)."""
     o = [f'<!-- Local video PiP 96x128 (drag, snaps to corners) -->', f'<clipPath id="pip"><rect x="270" y="115" width="96" height="128" rx="20"/></clipPath>',
          f'<rect x="270" y="115" width="96" height="128" rx="20" fill="{NAVY}" opacity="0.3" filter="url(#sh-card)"/>',
          f'<g clip-path="url(#pip)"><rect x="270" y="115" width="96" height="128" fill="{BTINT if not cam_off else NAVY}"/>']
-    o.append((boy(318, 172, 0.95) + photo_img(270, 115, 96, 128, 'rohan.jpg', 'xMidYMid')) if not cam_off else avatar(318, 179, 48, letter='A'))
-    o.append(f'</g><rect x="270" y="115" width="96" height="128" rx="20" fill="none" stroke="{WHITE}" stroke-opacity="0.85" stroke-width="2"/>')
+    if cam_off:
+        o.append(avatar(318, 179, 48, letter='A'))
+    else:
+        ph = photo_img(270, 115, 96, 128, img, 'xMidYMid')
+        if blur:
+            o.append(blur_defs('blr-pip', 9) + f'<g filter="url(#blr-pip)">{ph}</g>'
+                     + f'<rect x="270" y="115" width="96" height="128" fill="{NAVY}" opacity="0.3"/>' + icon('scan-face', 302, 163, WHITE, 32))
+        else:
+            o.append((boy(318, 172, 0.95) if img == 'rohan.jpg' else '') + ph)
+    o.append(f'</g><rect x="270" y="115" width="96" height="128" rx="20" fill="none" stroke="{WARN if blur else WHITE}" stroke-opacity="0.85" stroke-width="2"/>')
     return ''.join(o)
+
+
+def face_notice(name):
+    """Centre card over a blurred remote video when no face is detected (client update 21 Oct). Clears on its own."""
+    y, h = 318, 172
+    o = ['<!-- Face not detected notice (no action needed: unblurs when a face is back) -->', glass(24, y, 342, h, 24, op=0.9),
+         f'<circle cx="195" cy="{y + 48}" r="26" fill="{BTINT}"/>' + icon('scan-face', 181, y + 34, BLUE, 28)]
+    s, yy = text(195, y + 88, f"{name}'s face isn't visible", 'h4', anchor='middle', w=294)
+    o.append(s + text(195, yy + 4, f'The video is blurred until {name} is back in view.', 'notice', anchor='middle', w=280)[0])
+    return '\n'.join(o)
+
+
+def call_head_host(dur='03:25', name='Rohan_K'):
+    """Host-side call header: caller name + duration (19 is otherwise drawn from the user side)."""
+    return ('<!-- Call header (host view): caller name and duration -->'
+            + t1(24, 84, name, 20, 700, WHITE) + t1(24, 106, dur, 13, 600, WHITE))
 
 
 def video_controls(muted=False, cam_off=False):
@@ -162,16 +187,24 @@ def call_head(dark=True, dur='03:25', rate='80', name='Priya'):
             + gem(round(38 + tw(dur, 13, 600)), 94, 14, WHITE if dark else BLUE) + t1(round(56 + tw(dur, 13, 600)), 106, f'-{rate}/min', 13, 600, sub))
 
 
-def video_call(state='connected', overlay='', banner_txt=None, muted=False, cam_off=False):
+def video_call(state='connected', overlay='', banner_txt=None, muted=False, cam_off=False, host_view=False, own_noface=False):
+    """state 'noface': the other person's face isn't detected, so their video is blurred (client update 21 Oct).
+    own_noface: your face isn't detected; your PiP shows the blur the other side sees. host_view: the host's side of the call."""
     o = []
+    other = 'Rohan_K' if host_view else 'Priya'
     if state == 'remote-off':
         o.append(f'<rect width="390" height="844" fill="{NAVY}"/>' + avatar(195, 380, 72, img='priya.jpg')
                  + t1(195, 444, 'Priya turned off the camera', 13, 500, WHITE, 'middle'))
     else:
-        o.append(video_scene('girl', blur=state == 'blur', dim=0.45 if state in ('reconnecting', 'weak') else 0))
-    o.append(call_head())
+        o.append(video_scene('boy' if host_view else 'girl', img='rohan.jpg' if host_view else None, blur=state in ('blur', 'noface'),
+                             dim=0.45 if state in ('reconnecting', 'weak') else (0.15 if state == 'noface' else 0)))
+    o.append(call_head_host() if host_view else call_head())
     o.append(media_btn(318, 55, 'shield', 'right:shield').replace(f'fill="{NAVY}" opacity="0.4"', f'fill="{WHITE}" fill-opacity="0.18" stroke="{WHITE}" stroke-opacity="0.45"'))
-    o.append(pip(cam_off))
+    o.append(pip(cam_off, img='priya.jpg' if host_view else 'rohan.jpg', blur=own_noface))
+    if own_noface:
+        o.append(banner(259, f"We can't see your face. {other} sees a blurred video until you're back in view.", 'warning', icon_name='scan-face')[0])
+    if state == 'noface':
+        o.append(face_notice(other))
     if banner_txt:
         kind, txt = banner_txt
         b, _ = banner(259, txt, kind, action='Add' if kind == 'warning' else None)
@@ -239,6 +272,14 @@ def gen_19():
     frame(F, ID, N, 'Screen-Recording-Warning', video_call(banner_txt=('info', 'Screen recording is on. Please respect Priya’s privacy.')))
     frame(F, ID, N, 'Shield-Sheet', video_call(overlay=shield_sheet()))
     frame(F, ID, N, 'Chat-Drawer', video_call(overlay=chat_drawer()), note='50% height text chat drawer')
+    # Client update 21 Oct: no face in a camera → that video is blurred for the other person until a face is back
+    frame(F, ID, N, 'Host-Face-Not-Detected', video_call('noface'),
+          note='NEW (client 21 Oct): no face in the host’s camera → her video is blurred for the user and clears on its own when a face is back')
+    frame(F, ID, N, 'Own-Face-Not-Detected', video_call(own_noface=True), note='Same rule for the user’s camera: the host sees him blurred; his PiP shows it')
+    frame(F, ID, N, 'Host-View-Caller-Face-Hidden', video_call('noface', host_view=True),
+          note='Host side: the caller’s face isn’t detected → his video is blurred on the host’s screen')
+    frame(F, ID, N, 'Host-View-Own-Face-Hidden', video_call(host_view=True, own_noface=True),
+          note='Host side: her face isn’t detected → the caller sees her blurred; her PiP shows it')
 
 
 # ============================================================ 20 Voice Call

@@ -21,8 +21,8 @@
 <g clip-path="url(#screen)">
 <rect width="390" height="844" fill="#FFF4D6"/>
 <!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
-<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
-<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" class="cl-b1" opacity="0.50"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" class="cl-b2" opacity="0.30"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" class="cl-c1" opacity="0.35"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" class="cl-c2" opacity="0.17"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
 <clipPath id="c13"><rect x="0" y="103" width="390" height="619"/></clipPath>
 <g clip-path="url(#c13)"><g transform="translate(0 0)">
 <!-- Search row (read-only) → 14 --><!-- Input (empty) -->
@@ -179,7 +179,7 @@
 <rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/><rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.4"/><rect class="hit" data-hit="scrim" x="292" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/>
 <!-- SideDrawer (owner: Girish) width 292 = 75% -->
 <g transform="translate(0 0)"><clipPath id="dwc"><rect width="292" height="844"/></clipPath><rect x="0" y="0" width="292" height="844" fill="#FFF4D6" filter="url(#sh-lg)"/><rect class="hit" data-hit="sheet" x="0" y="0" width="292" height="844" fill="#FFFFFF" fill-opacity="0"/>
-<g clip-path="url(#dwc)"><g filter="url(#blur-xl)"><ellipse cx="240" cy="40" rx="140" ry="130" fill="#5B7CFA" opacity="0.22"/><ellipse cx="20" cy="820" rx="120" ry="110" fill="#E94B4B" opacity="0.14"/></g></g>
+<g clip-path="url(#dwc)"><g filter="url(#blur-xl)"><ellipse cx="240" cy="40" rx="140" ry="130" fill="#5B7CFA" class="cl-b3" opacity="0.36"/><ellipse cx="20" cy="820" rx="120" ry="110" fill="#E94B4B" class="cl-c3" opacity="0.24"/></g></g>
 <rect x="12" y="56" width="268" height="236" rx="24" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
 <circle cx="60" cy="107" r="36.0" fill="#EAF0FF"/><circle cx="60" cy="107" r="35.4" fill="url(#g-glass)" stroke="#FFFFFF" stroke-width="1.2" filter="url(#sh-sm)"/>
 <text x="60" y="116.4" text-anchor="middle" font-size="26" font-weight="700" fill="#5B7CFA" xml:space="preserve">A</text><rect class="hit" data-hit="avatar" x="24" y="71" width="72" height="72" fill="#FFFFFF" fill-opacity="0"/>

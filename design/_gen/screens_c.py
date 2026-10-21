@@ -398,7 +398,7 @@ def s07_body(sel=False, loading=False, msg=None):
     btn = 'disabled' if loading or not sel or msg == 'offline' else 'primary'
     c, _ = cta('Proceed with Selected Method', btn, '08')
     o.append(c)
-    o.append(topbar('back', nav_back='05', step=5))
+    o.append(topbar('back', nav_back='06 (host profile)', step=6))
     o.append(status_bar())
     o.append(home_indicator())
     return '\n'.join(o)
@@ -440,7 +440,7 @@ def s09a_body(sel=('Hindi', 'English', 'Kannada'), query=None, state='list', lim
     btn = btn or ('primary' if sel and state in ('list', 'noresult') else 'disabled')
     c, _ = cta('Continue', btn, '10 (as sheet from 24/26: save + close)')
     o.append(c)
-    o.append(topbar('back', nav_back='08 (hidden while upload runs)', step=6))
+    o.append(topbar('back', nav_back='08 (hidden while upload runs)', step=7))
     o.append(status_bar())
     o.append(home_indicator())
     return '\n'.join(o)
