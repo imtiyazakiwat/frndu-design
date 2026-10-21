@@ -4,7 +4,7 @@
 
 Briefs: `docs/design_tasks/01-imtiyaz.md` (Imtiyaz, done), Girish (done; 27, 28, 30, 39, 48 are DRAFT), Abid (all DRAFT). System: `docs/design.md` (origin/dev). Layout constants: `LAYOUT-CONSTANTS.md` (PROPOSED).
 
-**499 screen frames** across 58 screens, plus 3 shared component sheets. All frames are 390 × 844 SVG, named `{ID}_{Screen}_{State}.svg`.
+**509 screen frames** across 58 screens, plus 3 shared component sheets. All frames are 390 × 844 SVG, named `{ID}_{Screen}_{State}.svg`.
 Every tappable element carries an XML comment with its navigation target (e.g. `<!-- Button primary: "Get Started" → 02 -->`).
 
 Not drawn: 360 / 412 / 430 width variants and Hindi variants (except the explicit Hindi checks on 06.1 and 11).
@@ -17,6 +17,7 @@ Open `design/prototype/index.html` in a browser (no server needed).
 - **▶ Run**: click through the real frames on a phone, starting at 01. Buttons, cards, chips, inputs, switches and tabs are live; loading states auto-advance; scroll on the phone for long screens.
 - **‹ ›** arrows (or ← →) step through every state of the current screen, then roll on to the next screen. **▶ Play all** (or Space) walks every frame in order. Auto-advance pauses while stepping.
 - Side panel jumps to any screen/state. Keys: Esc = canvas, Backspace / B = back, H = show hotspots, R = restart. Only the Q3 Contact Support form (66), the store, OS settings and the support link show a placeholder.
+- **◐ Background** (top right): sliders for the Blue (top right) and Coral (bottom left) background clouds on every frame, in Canvas and Run mode, with **Before** (11 Oct values) and **Reset** (shipped values). The choice is saved in the browser only.
 - Live: https://frndu-prototype.vercel.app
 - Click targets live in `design/_gen/flow.js`.
 
@@ -40,12 +41,12 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 | 03 | SMS OTP | 12: Empty, Partly-Filled, Complete, Verifying, Wrong-Code, Lockout, Resend-Available, Resend-Sending, Code-Sent-Toast, Code-Expired, Offline, Keyboard-Open | Verify → 04 (new) / 13 or 24 (returning) / 56 / 03A / 06.1; Change number & back → 02 |
 | 03A | Account Restore | 8: Default, Default-Scrolled, Host-Account, Last-Day, Restoring, Restore-Limit-Reached, Error, Offline | Restore → 13 (24 host); Continue with Deletion → 01; Contact Support → link |
 | 04 | Gender | 9: Nothing-Selected, Male-Selected, Female-Selected, Confirm-Male-Dialog, Confirm-Female-Dialog, Saving, Locked-Re-entry, Error, Offline | Continue → confirm dialog → 06 (Male) / 05 (Female) |
-| 05 | Role Select | 5: Nothing-Selected, User-Selected, Host-Selected, Loading, Error | Explore as User → 06; Become a Host → 07; back → 04 (locked) |
-| 06 | Basic Profile | 20: Empty, Partly-Filled, Ready, Ready-Top, Photo-Sheet, Crop, Avatar-Uploading, Avatar-Rejected, Nickname-Error, Nickname-At-Limit, Date-Picker, Date-Under-18, Languages-Limit, Referral-Expanded, Referral-Error, Keyboard-Nickname, Keyboard-Referral, Saving, Error, Offline | Complete Setup → 06A (under 18 → 06.1); back → 04/05; avatar → photo sheet → crop |
+| 05 | Role Select | 5: Nothing-Selected, User-Selected, Host-Selected, Loading, Error | Explore as User → 06; Become a Host → 06 (host variant) → 07; back → 04 (locked) |
+| 06 | Basic Profile | 24: Empty, Partly-Filled, Ready, Ready-Top, Photo-Sheet, Crop, Avatar-Uploading, Avatar-Rejected, Nickname-Error, Nickname-At-Limit, Date-Picker, State-Picker, Date-Under-18, Languages-Limit, Referral-Expanded, Referral-Error, Keyboard-Nickname, Keyboard-Referral, Saving, Error, Offline, Host-Empty, Host-Ready, Host-Ready-Scrolled | Complete Setup → 06A (under 18 → 06.1); host variant: Continue → 07; back → 04/05; avatar → photo sheet → crop; State → state picker |
 | 06A | Live Photo (NEW, normal users) | 7: Intro, Camera, No-Face, Review, Uploading, Upload-Failed, Permission-Denied | Take live photo → camera → review → Use photo → 12; Skip for now → 12; back → 06 |
 | 06.1 | Under-18 Blocked (NEW) | 3: Default, Hindi, Long-Text | Read our policy → 68; Contact Support → link; Log Out → 01 |
 | 12 | Permissions Primer | 4: Default, Dialog-Camera-Off, Dialog-Microphone-Off, Dialog-Notifications-Off | Grant Permissions → OS prompts → 13; Not now → 13 |
-| 07 | Verification Method | 5: Unselected, Selected, Preselected-Variant, Loading, Offline | Proceed → 08; back → 05 |
+| 07 | Verification Method | 5: Unselected, Selected, Preselected-Variant, Loading, Offline | Proceed → 08; back → 06 (host variant) |
 | 08 | Video Verification | 11: Ready, Precheck-Low-Light, Precheck-Face-Off-Centre, Recording, Review, Face-Lost, Uploading, Upload-Failed, Permission-Denied, Daily-Limit, Offline | Start → recording; Submit → 09A; Retake → ready; back → 07 |
 | 09A | Host Languages | 9: Prefilled, None-Selected, Limit-Reached, Searching, No-Result, Loading, Load-Failed, Offline, As-Sheet | Continue → 10 (as sheet from 24/26: Save + close) |
 | 10 | Verification Pending | 4: Waiting, Taking-Longer, Offline, Persistent-Banner-Component | Explore App as Guest User → 13; decision → 11 |
@@ -58,12 +59,12 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 | 00.1 | Side Drawer (Girish) | 10: Opening, Open-User, Open-Scrolled, Row-Pressed, ID-Copied, Long-Nickname, Approved-Host-User-Drawer, Hindi-Labels, Open-Host, Closing | Rows → 40 / 30 / 31 / 41 / 60 / 01.1 / 59 / 65 / 63; host rows → 13 / 32 / 25; Log Out → 01; scrim → close |
 | 13 | Home Feed (Girish) | 14: Loading, Default, Scrolled, Filters-Active, Load-More, Pull-To-Refresh, Empty, Offline-Cached, Guest-Verification-Pending, Balance-Zero, Balance-Five-Digit, Long-Name-Missing-Photo, Without-Nearby, Busy-Status-Change | Avatar → 00.1; DiamondPill → 30; search / filters → 14; banner / host card → 16; Quick Match → 13.1 |
 | 13.1 | Quick Match Picker (Girish) | 6: Video-Selected, Voice-Selected, Balance-Too-Low, Few-Hosts-Online, Loading-Prices, Offline | Start Matching → 15; Recharge to continue → 30; scrim → 13 |
-| 14 | Filter & Search (Girish) | 8: Default, Filters-Changed, Nothing-Selected, Searching, Results, No-Results, Offline, Error | Apply Filters → 13 (filtered); result row → 16; close → 13 |
+| 14 | Filter & Search (Girish) | 9: Default, Filters-Changed, Nothing-Selected, Searching, Results, No-Results, Offline, Error, Q2-Age-Group | Apply Filters → 13 (filtered); recent search → search; result row → 16; close → 13. No price or rating filter (21 Oct) |
 | 15 | Matching Radar (Girish) | 7: Searching, Searching-Voice, Still-Looking, No-Hosts-Available, Cancelled, Reduced-Motion, Offline | Cancel Match → 13; Try again → restart; Back to home → 13 |
 | 16 | Host Profile (Girish) | 16: Loading, Default, Scrolled-Pricing, Scrolled-Reviews, Long-Bio, No-Reviews, Missing-Photos, Favorite-On, Host-Busy, Host-Offline, Video-Mode-Off, Chat-Off-Toast, Low-Balance-Toast, Overflow-Sheet, Offline, Error | Voice / Video → 17 (or 30 if balance short); Message → 28; overflow → 39; back → caller |
 | 17 | Outbound Ringing (Girish) | 7: Ringing-Video, Ringing-Voice, Connecting, Host-Unavailable, Host-Busy, Connection-Dropped, Offline | Connected → 19 / 20; Cancel / Back to profile → 16 |
 | 18 | Incoming Call (Girish) | 7: Video-30s, Voice-30s, Countdown-10s, Countdown-3s, Accepting, Auto-Declined, Camera-Permission-Missing | Swipe to accept → 19 / 20; Decline / auto-decline → 24 |
-| 19 | Video Call (Girish) | 11: Connected, Muted, Camera-Off, Remote-Camera-Off, Low-Balance-Banner, Zero-Balance-Countdown, Weak-Connection, Reconnecting, Screen-Recording-Warning, Shield-Sheet, Chat-Drawer | Shield → sheet → 39 / 59; low-balance banner → 22; End → 23; violation → 38 |
+| 19 | Video Call (Girish) | 15: Connected, Muted, Camera-Off, Remote-Camera-Off, Low-Balance-Banner, Zero-Balance-Countdown, Weak-Connection, Reconnecting, Screen-Recording-Warning, Shield-Sheet, Chat-Drawer, Host-Face-Not-Detected, Own-Face-Not-Detected, Host-View-Caller-Face-Hidden, Host-View-Own-Face-Hidden | Shield → sheet → 39 / 59; low-balance banner → 22; End → 23; violation → 38; no face → video blurred until a face is back |
 | 20 | Voice Call (Girish) | 9: Connected, Muted, Speaker-On, Bluetooth-Connected, Low-Balance-Banner, Zero-Balance-Countdown, Reconnecting, Host-Muted, Reduced-Motion | Low-balance banner → 22; End → 23 |
 | 22 | Low Balance Drawer (Girish) | 7: Banner-Only, Sheet-Open, Purchasing, Success-Toast, Failed, Grace-Countdown, Voice-Call-Sheet | Bundle → store purchase → toast; See all bundles → 30 (call keeps running) |
 | 23 | Call Ended (Girish) | 8: User-Rate, User-Rated, Low-Rating-Prompt, Short-Call, Submitting, Error, Offline-Queued, Host-Summary | Submit / Skip / close → 13 (host → 24); ≤ 2 stars → Report → 39 |
@@ -74,7 +75,7 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 | 48 | Payment Result (Girish, DRAFT) | 12: Success-Bonus, Success-No-Bonus, Success-Long-Order-ID, Pending, Pending-Checking, Failed-Declined, Failed-Funds, Failed-Store, Failed-Timeout, Compact-Success, Compact-Pending, Compact-Failed | Continue → origin; View receipt → 31; Try again → same bundle; compact sheet over 19 for in-call buys |
 | 39 | Report Sheet (Girish, DRAFT) | 7: No-Reason, Reason-Selected, Screenshot-Uploading, Submitting, Success, Error, Offline | Submit Report & Block → success (case ID) → Done closes; opened from 16, 19, 23, 27, 28, 59 |
 | 40 | Profile & Settings (Abid, DRAFT) | 8: Default, Scrolled, ID-Copied, Theme-Sheet, Log-Out-Dialog, Logging-Out, Host-Account, Offline | Rows → 40.1 / 60 / 01.1 / 31 / 41 / 65 / 59 / 63 / 68; Log Out → dialog → 01; Delete → 42 |
-| 40.1 | Edit Profile (Abid, DRAFT) | 7: Default, Editing, Nickname-Error, Locked-Field-Toast, Photo-Sheet, Saving, Saved-Toast | Save → toast → 40; DOB and gender locked |
+| 40.1 | Edit Profile (Abid, DRAFT) | 8: Default, Editing, Nickname-Error, Locked-Field-Toast, State-Sheet, Photo-Sheet, Saving, Saved-Toast | Save → toast → 40; DOB (with age) and gender locked; State → state picker |
 | 60 | Notification Preferences (Abid, DRAFT) | 6: Default, Presence-Off, OS-Notifications-Off, Quiet-Hours-Sheet, Host, Save-Failed-Toast | Toggles save instantly; Quiet hours → sheet; OS off → Open Settings |
 | 41 | Blocked Users (Abid, DRAFT) | 6: Default, Unblock-Dialog, Unblocked-Toast, Empty, Loading, Error | Unblock → confirm dialog → toast |
 | 63 | About (Abid, DRAFT) | 6: Default, Scrolled, Checking-Update, Update-Available, Up-To-Date, Diagnostic-ID-Copied | Check for update; legal rows → 68; Rate → store; Copy diagnostic ID |
@@ -103,7 +104,7 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 - **03A Account Restore**: Default: No top bar, no back. Content scrolls under pinned actions; Restore-Limit-Reached: Max 3 restores in 12 months
 - **04 Gender**: Nothing-Selected: No top bar at first entry; Confirm-Male-Dialog: Scrim tap does not dismiss; Confirm-Female-Dialog: Scrim tap does not dismiss; Locked-Re-entry: Reached with Back from 05; gender not reset
 - **05 Role Select**: Nothing-Selected: Female users only. "You can change this later." needs owner confirmation
-- **06 Basic Profile**: Empty: Form scrolls; Complete Setup pinned. Photo optional? (question); Crop: Full-screen state of 06, reused by 40.1 and 26; Avatar-Rejected: Default avatar + moderation message; Date-Under-18: Complete Setup → 06.1; Referral-Error: Non-blocking; Launch accepts code without validation
+- **06 Basic Profile**: Empty: Form scrolls; Complete Setup pinned. Photo optional? (question); Ready-Top: Client update 21 Oct: the Age pill shows the age worked out from the date of birth; State is required and editable later; Crop: Full-screen state of 06, reused by 40.1 and 26; Avatar-Rejected: Default avatar + moderation message; State-Picker: NEW (client 21 Oct): all states and union territories, searchable; tap selects and closes; Date-Under-18: Complete Setup → 06.1; Referral-Error: Non-blocking; Launch accepts code without validation; Host-Empty: NEW (client 21 Oct): hosts fill the same profile after 05, then Continue → 07. Under 18 → 06.1
 - **06A Live Photo (NEW, normal users)**: Intro: NEW: after 06 for normal users. Optional (Skip for now) until the owner decides; Camera: Front camera, live capture only; No-Face: Shutter disabled until a face is found; Uploading: Back hidden while saving; Permission-Denied: Camera dialog from 12
 - **06.1 Under-18 Blocked (NEW)**: Default: NEW screen; no back, not dismissible; no primary button; Hindi: Hindi translation is draft; needs review; Long-Text: Stress test for long copy
 - **12 Permissions Primer**: Default: T4 full-height sheet, no back. System prompts not designed; Dialog-Camera-Off: Reused before first call and on 08; Dialog-Microphone-Off: Reused before first call and on 08; Dialog-Notifications-Off: Reused before first call and on 08
@@ -120,12 +121,12 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 - **00.1 Side Drawer (Girish)**: Opening: Panel slides in 250–350 ms, scrim fades in; Open-User: Opened from 13 avatar or left-edge swipe; Open-Scrolled: Menu scrolls; Log Out stays pinned; Approved-Host-User-Drawer: Approved host browsing as user; Hindi-Labels: Labels wrap to 2 lines max; row grows to 64; Open-Host: Opened from 24 avatar
 - **13 Home Feed (Girish)**: Default: Banners auto-scroll every 4 s; Busy/Online changes cross-fade 200 ms; Scrolled: 88 px bottom padding keeps the last card above Quick Match; Guest-Verification-Pending: Banner component from 10; Without-Nearby: If Nearby is cut (tasks.md T-31); Busy-Status-Change: Online → Busy: 200 ms cross-fade, no flicker
 - **13.1 Quick Match Picker (Girish)**: Video-Selected: Last used mode is preselected
-- **14 Filter & Search (Girish)**: Default: 90% height sheet; Nothing-Selected: Reset disabled; Results: Results never include hosts without the selected mode
+- **14 Filter & Search (Girish)**: Default: Client update 21 Oct: price-per-minute and host-rating filters removed. Sheet height follows its content (vertical scaling); results open at 90%; Nothing-Selected: Reset disabled; Results: Results never include hosts without the selected mode; Q2-Age-Group: Q2 (Jan–Mar 2027), not in the Launch build: filter hosts by age group, using the ages collected in 06. The sheet grows by one section
 - **15 Matching Radar (Girish)**: Searching: Orbiting avatars are decorative, not real hosts. No top bar; Still-Looking: After 10 s; No-Hosts-Available: After 30 s; Reduced-Motion: Rings static, no orbit
 - **16 Host Profile (Girish)**: Default: 3 CTAs (Message + Voice + Video): PRD §16.3 one-primary question; Low-Balance-Toast: Then pushes 30
 - **17 Outbound Ringing (Girish)**: Ringing-Video: Blurred host photo + Navy 40% scrim; no top bar; Connecting: After the host accepts; Host-Unavailable: 30 s timeout
 - **18 Incoming Call (Girish)**: Video-30s: Locked phone uses the OS call screen (not designed); Auto-Declined: After 30 s; 3 unattended calls set the host Offline (banner on 24)
-- **19 Video Call (Girish)**: Connected: Portrait only. PiP never overlaps controls at 360 × 800; Camera-Off: Your PiP shows your avatar; Low-Balance-Banner: Tap banner → 22 sheet; Reconnecting: Up to 10 s, then the call ends → 23; Chat-Drawer: 50% height text chat drawer
+- **19 Video Call (Girish)**: Connected: Portrait only. PiP never overlaps controls at 360 × 800; Camera-Off: Your PiP shows your avatar; Low-Balance-Banner: Tap banner → 22 sheet; Reconnecting: Up to 10 s, then the call ends → 23; Chat-Drawer: 50% height text chat drawer; Host-Face-Not-Detected: NEW (client 21 Oct): no face in the host’s camera → her video is blurred for the user and clears on its own when a face is back; Own-Face-Not-Detected: Same rule for the user’s camera: the host sees him blurred; his PiP shows it; Host-View-Caller-Face-Hidden: Host side: the caller’s face isn’t detected → his video is blurred on the host’s screen; Host-View-Own-Face-Hidden: Host side: her face isn’t detected → the caller sees her blurred; her PiP shows it
 - **20 Voice Call (Girish)**: Connected: No Gift, no Request Video at Launch; Reduced-Motion: Static waveform
 - **22 Low Balance Drawer (Girish)**: Banner-Only: Prices are placeholders from the Client; Success-Toast: Sheet closes
 - **23 Call Ended (Girish)**: User-Rate: Rating block for calls ≥ 30 s; Low-Rating-Prompt: ≤ 2 stars → Report link → 39; Short-Call: < 30 s: no rating; Offline-Queued: Rating queued until online; Host-Summary: No rating UI for hosts
@@ -136,7 +137,7 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 - **48 Payment Result (Girish, DRAFT)**: Success-Bonus: Bonus shown separately; Success-Long-Order-ID: Long order IDs truncate with …; full ID in the receipt (31); Pending: Auto-polls every 5 s for 2 min, then background + push. Never blocks an active call; Compact-Success: In-call purchase from 22; the call keeps running
 - **39 Report Sheet (Girish, DRAFT)**: No-Reason: Opened from 16 overflow, 19 shield, 28 overflow, 27 request, 23 low rating; Success: "Track this report" (58) arrives in Q3, so no link at Launch
 - **40 Profile & Settings (Abid, DRAFT)**: Default: Q1 menu shows only built destinations (PRD phase notes). Earn with Us (36), Favorites (43), My Reports (58) arrive later; Theme-Sheet: Dark mode is an open decision (PRD §16 D5); Host-Account: Opened from 26 "Account settings"; pushed with back
-- **40.1 Edit Profile (Abid, DRAFT)**: Default: Save stays disabled until something changes. DOB and gender are locked (PRD §7.11)
+- **40.1 Edit Profile (Abid, DRAFT)**: Default: Save stays disabled until something changes. DOB and gender are locked (PRD §7.11); the age comes from the DOB. State is editable (client update 21 Oct); State-Sheet: Same state picker as 06, opened on the current state
 - **60 Notification Preferences (Abid, DRAFT)**: Default: Saved instantly on toggle (server-side). Account & safety locked on (PRD §10.2); Host: Incoming calls cannot be disabled while Online
 - **63 About (Abid, DRAFT)**: Default: Company name and emails are placeholders. Grievance Officer contact required by Indian IT rules; Update-Available: Opens the store; force updates use 64
 - **65 Help Center (Abid, DRAFT)**: Default: CMS articles (Hindi/English). Contact Support form (66) and My Tickets (67) are Q3: button opens the support link for now
@@ -198,7 +199,7 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 31. 16: the sticky bar has three CTAs (Message + Voice + Video). This conflicts with "one primary button per screen" (PRD §16.3).
 32. 38: who sees the moderation overlay (the user, the host, or both)? Copy is softened; a confirmed violation shows 57 afterwards.
 33. 00.1: Log Out should open a confirm dialog first. The dialog is not drawn; the prototype goes straight to 01.
-34. Prototype-only navigation (not product behaviour): 15 has no "match found" frame, so the radar runs Searching → Still looking → No hosts. 19 is drawn from the user side; an accepted incoming call (18) also lands on 19. On 24, going online auto-plays an incoming call (18) after 5 s.
+34. Prototype-only navigation (not product behaviour): 15 has no "match found" frame, so the radar runs Searching → Still looking → No hosts. 19 is drawn from the user side (except the two Host-View face-detection frames); an accepted incoming call (18) also lands on 19. On 24, going online auto-plays an incoming call (18) after 5 s.
 35. The Girish and Abid briefs are now saved in `docs/design_tasks/`. The DRAFT screens have the new theme but have NOT yet been compared line by line with them.
 
 **New theme (11 Oct), matching `design/_refs/` (Home is the master)**
@@ -210,6 +211,15 @@ python3 design/_gen/sheet.py "design/02_*/*.svg" /tmp/02.png   # contact sheet f
 56. 19 Video Call follows `Glossy Video Call with Priya.png`: name, duration and ticker top-left, Rohan in the PiP, and five controls (Mute, Stop Video, End Call, Chat, Flip) in a frosted dark panel. The brief says "no bar behind them". The ref’s “End-to-end encrypted”, add-friend, reactions and floating comments are NOT added (not in the PRD).
 57. 17 and 20 use the Cream themed canvas (`Pastel Calling Screen for Priya.png`, `Frndu Secure Call with Priya.png`). The 17 brief asks for a blurred photo with a Navy scrim; 20 asks for two avatars side by side. 20 has the Frndu mark and a -40/min ticker in place of the ref’s “Secure Call” pill. The ref’s Video and Chat buttons are not added (the brief says no Request Video).
 58. 16: the followers count is removed from the stats card (rating + talk time only).
+
+**Client update (21 Oct)**
+59. Age: 06 keeps the date-of-birth picker (the 18+ gate needs it) and shows the age it gives ("Age 28"); 40.1 shows it next to the locked date of birth. Is that enough, or should the form ask for the age itself?
+60. Hosts now fill 06 too (05 Become a Host → 06 → 07), so age and state are collected for both roles. The step bar grows to 7 steps. The referral row is kept for hosts. Confirm.
+61. State: required in 06, editable later in 40.1; the list has every state and union territory of India. What should accounts with a non-Indian number see? Should the state be shown anywhere (host cards, 16)? Not shown for now.
+62. Age groups (Q2): drawn as an "Age group" filter on 14 (18–24, 25–34, 35–44, 45+, multi-select) in `14_..._Q2-Age-Group`. Confirm the ranges, and that this is what "range of age groups in Q2" means.
+63. 14: the price-per-minute and host-rating filters are removed. "Vertical scaling" is read as: the sheet is only as tall as its content (shorter now, taller with the Q2 section) and opens to 90% for search results. Recent searches moved up as chips. Confirm.
+64. 19: when a camera shows no face, that person's video is blurred for the other side until a face is back. Drawn both ways: the host's face is hidden → the user sees her blurred; the caller's face is hidden → the host sees him blurred. Which side did the client mean? How long without a face before the blur starts? Does billing continue while blurred?
+65. Background clouds are stronger: Blue 50% (was 30%) and Coral 35% (was 20%). The prototype's ◐ Background control previews other values on every frame; send back the numbers you like.
 
 **DRAFT screens (27, 28, 30, 39, 48 and all Abid screens): built without the Girish/Abid brief files**
 36. Layout, states and copy come from PRD §5, §7.8–7.12, §8.4–8.8 and §10.2. For 27, 28, 30, 39 and 48 the state lists and most copy were recovered from earlier unsourced frames. Recheck every DRAFT screen against the briefs once they are saved.

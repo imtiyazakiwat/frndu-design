@@ -2,6 +2,21 @@
 
 Read this file first, then follow "Next steps" in order. Work directly with the tools. **Do not use workflows**: the user finds them too slow.
 
+## Latest: client update, 21 Oct (built locally; not committed or deployed yet)
+
+The client's list (voice-typed, as received): "1. collect the age of the user and hoster, and also state, and range of age groups in Q2. 2. 14 Filter search: remove both per-minute and host rating sort. 2. Vertical scaling. 3. If face is not detected, blur the hoster's screen. 4. Increase the opacity of the top-right blue and bottom-left red." The user added: a prototype widget to try other opacities, with reset.
+
+Done (509 frames, flow checker clean):
+- **06**: "Age 28" pill in the date-of-birth field (`age_pill` in lib.py; `age_from`, `TODAY` in screens_b). New required **State** field and `state_sheet()` picker (all states and UTs) → state `State-Picker`. Hosts now fill 06 too: `Host-Empty`, `Host-Ready`, `Host-Ready-Scrolled` (CTA "Continue" → 07); 05 Become a Host → 06 → 07. The step bar has 7 steps (`progress(total=7)`; 07 = 6, 09A = 7).
+- **40.1**: editable State row + `State-Sheet`; date of birth (with age) and gender in one locked card.
+- **14**: price-per-minute and host-rating filters removed; recent searches are chips under the search field; the sheet is as tall as its content (my reading of "vertical scaling"); new `Q2-Age-Group` frame (18–24 / 25–34 / 35–44 / 45+).
+- **19**: `Host-Face-Not-Detected`, `Own-Face-Not-Detected`, `Host-View-Caller-Face-Hidden`, `Host-View-Own-Face-Hidden`. Drawn both ways because the client didn't say whose face.
+- **Clouds**: `CLOUD_DEFAULT` in lib.py (Blue 0.50, Coral 0.35; was 0.30 / 0.20). Every cloud shape carries a `cl-*` class via `cloud()`, including the 00.1 drawer and 16 sheet clouds. To ship other values, change `CLOUD_DEFAULT` and rebuild.
+- **Prototype**: header button "◐ Background" opens Blue / Coral sliders with Before and Reset (`initCloudPanel` in proto.py). Run mode follows CSS variables; canvas images get a `<style>` injected; values persist in localStorage (`frndu-clouds`).
+- README questions 59–65 log the assumptions (age vs DOB, host path, state rules, Q2 ranges, "vertical scaling", whose face, cloud values).
+
+Repo facts (these supersede "Who / what" below): this repo is `/Users/imtiyazakiwat/Downloads/Documents/frndu-design` (GitHub `imtiyazakiwat/frndu-design`, branch `main`). `build.py` writes `design/prototype/index.html`; copy it to the root `index.html` (the Vercel site). Deploy folder: `~/frndu-prototype-deploy` (has `.vercel`). Ask before committing, pushing or deploying.
+
 ## Who / what
 
 - **User:** Imtiyaz, a designer on Frndu (an Indian voice/video "talk to a host" app). The project owner is Rahul Mirji.

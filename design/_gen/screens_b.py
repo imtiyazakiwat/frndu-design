@@ -75,20 +75,51 @@ def gen_05():
 # ============================================================ 06 Basic Profile
 LANGS6 = ['Hindi', 'English', 'Kannada', 'Tamil', 'Telugu', 'Marathi', 'Bengali', 'Malayalam', 'Gujarati', 'Punjabi', 'Urdu', 'Odia']
 
+# States and union territories of India for the State picker (client update 21 Oct: collect state for users and hosts).
+STATES_IN = ['Andaman & Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh',
+             'Dadra & Nagar Haveli and Daman & Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir',
+             'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya',
+             'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura',
+             'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+TODAY = (2026, 10, 21)   # frame date, used to work out the age shown next to the date of birth
+
+
+def age_from(dob):
+    """'12 / 03 / 1998' → 28 on TODAY."""
+    d, m, y = (int(p) for p in dob.split('/'))
+    return TODAY[0] - y - ((TODAY[1], TODAY[2]) < (m, d))
+
+
+def state_sheet(sel=None, start=0, top=256):
+    """State picker (BottomSheet): search + single-select list (8 rows in view, scrolls); tapping a row selects it and closes."""
+    b = [text(24, top + 24, 'Choose your state', 'h3')[0], icon('x', 342, top + 22, NAVY) + hit(330, top + 10, 48, 48, 'close')]
+    y = top + 70
+    b.append(input_box(y, None, 'Search states', 'empty', left_icon='search'))
+    y += 56 + 12
+    rows = []
+    for i, st in enumerate(STATES_IN[start:start + 8]):
+        ry = y + i * 52
+        on = st == sel
+        rows.append(f'<!-- State row "{st}" → select + close -->'
+                    + (f'<rect x="12" y="{ry + 2}" width="366" height="48" rx="16" fill="{BTINT}"/>' if on else '')
+                    + t1(28, ry + 31, st, 15, 600 if on else 500, NAVY) + radio(350, ry + 26, on) + hit(0, ry, 390, 52, f'state:{st}'))
+    b.append(clip_group(f'stl{start}', y, y + 8 * 52, '\n'.join(rows)))
+    return scrim() + sheet(top, '\n'.join(b))
+
 
 def s06_form(av='empty', nick=None, nick_state='empty', nick_msg=None, dob=None, dob_state='empty',
-             langs=(), limit=False, ref='collapsed', ref_val=None, ref_state='empty'):
+             langs=(), limit=False, ref='collapsed', ref_val=None, ref_state='empty', state=None, state_state='empty', host=False):
     o = []
     y = 103 + 8
     s, y = text(24, y, 'Set up your profile', 'h2')
     o.append(s)
-    s, y = text(24, y + 8, 'This is how people will see you.', 'body')
+    s, y = text(24, y + 8, 'This is how callers will see you.' if host else 'This is how people will see you.', 'body')
     o.append(s)
     y += 24
     cy = y + 36
     o.append('<!-- Avatar block → photo sheet (Take photo / Choose from gallery / Remove) → 1:1 crop -->')
     if av in ('done', 'uploading'):
-        o.append(avatar(195, cy, 72, img='rohan.jpg'))
+        o.append(avatar(195, cy, 72, img='priya.jpg' if host else 'rohan.jpg'))
     elif av == 'letter':
         o.append(avatar(195, cy, 72, letter=(nick or 'A')[0].upper()))
     else:
@@ -120,13 +151,24 @@ def s06_form(av='empty', nick=None, nick_state='empty', nick_msg=None, dob=None,
         s, y = text(24, y, 'Letters, numbers, spaces and underscore.', 'notice')
     o.append(s)
     y += 24
-    # DOB
+    # DOB (+ the age it gives: client update 21 Oct, age collected for users and hosts)
     o.append(t1(24, y + 15, 'Date of birth', 14, 600, NAVY))
     y += 28
-    o.append('<!-- Date of birth field → date picker sheet -->')
+    o.append('<!-- Date of birth field → date picker sheet; the Age pill appears once a date is set -->')
     o.append(input_box(y, dob, 'DD / MM / YYYY', dob_state, right_icon='calendar'))
+    if dob:
+        o.append(age_pill(322, y + 28, age_from(dob)))
     y += 64
     s, y = text(24, y, "You must be 18 or older. You can't change this later.", 'notice')
+    o.append(s)
+    y += 24
+    # State (NEW, client update 21 Oct)
+    o.append(t1(24, y + 15, 'State', 14, 600, NAVY))
+    y += 28
+    o.append('<!-- State field → state picker sheet -->')
+    o.append(input_box(y, state, 'Select your state', state_state, right_icon='chevron-down', caret=False))
+    y += 64
+    s, y = text(24, y, 'You can change this later.', 'notice')
     o.append(s)
     y += 24
     # Languages
@@ -218,11 +260,14 @@ def crop_screen():
 
 def gen_06():
     F, ID, N = '06_Basic-Profile', '06', 'Basic-Profile'
-    full = dict(av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 1998', dob_state='filled', langs=('Hindi', 'English'))
+    full = dict(av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 1998', dob_state='filled', langs=('Hindi', 'English'),
+                state='Karnataka', state_state='filled')
+    S = 351   # scrolled view: date of birth, state, languages and referral in view (the State block added 135 px)
     frame(F, ID, N, 'Empty', s06_body(), note='Form scrolls; Complete Setup pinned. Photo optional? (question)')
     frame(F, ID, N, 'Partly-Filled', s06_body(av='letter', nick='Aarav_22', nick_state='filled'))
-    frame(F, ID, N, 'Ready', s06_body(scroll=300, btn='primary', **full))
-    frame(F, ID, N, 'Ready-Top', s06_body(btn='primary', **full))
+    frame(F, ID, N, 'Ready', s06_body(scroll=S, btn='primary', **full))
+    frame(F, ID, N, 'Ready-Top', s06_body(btn='primary', **full),
+          note='Client update 21 Oct: the Age pill shows the age worked out from the date of birth; State is required and editable later')
     frame(F, ID, N, 'Photo-Sheet', s06_body(av='letter', nick='Aarav_22', nick_state='filled', overlay=photo_sheet()))
     frame(F, ID, N, 'Crop', crop_screen(), note='Full-screen state of 06, reused by 40.1 and 26')
     frame(F, ID, N, 'Avatar-Uploading', s06_body(av='uploading', nick='Aarav_22', nick_state='filled'))
@@ -231,18 +276,27 @@ def gen_06():
           nick_msg='Please keep phone numbers and bad words out of your nickname.'))
     frame(F, ID, N, 'Nickname-At-Limit', s06_body(av='letter', nick='Aarav_the_storyteller'[:20], nick_state='focused'))
     frame(F, ID, N, 'Date-Picker', s06_body(av='done', nick='Aarav_22', nick_state='filled', overlay=date_sheet()))
-    frame(F, ID, N, 'Date-Under-18', s06_body(scroll=300, btn='primary', av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 2010',
-          dob_state='filled', langs=('Hindi',)), note='Complete Setup → 06.1')
-    frame(F, ID, N, 'Languages-Limit', s06_body(scroll=300, btn='primary', av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 1998',
-          dob_state='filled', langs=('Hindi', 'English', 'Kannada', 'Tamil', 'Marathi'), limit=True))
-    frame(F, ID, N, 'Referral-Expanded', s06_body(scroll=380, btn='primary', ref='expanded', ref_state='focused', **full))
-    frame(F, ID, N, 'Referral-Error', s06_body(scroll=380, btn='primary', ref='error', ref_val='FRN12', ref_state='error', **full),
+    frame(F, ID, N, 'State-Picker', s06_body(av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 1998', dob_state='filled',
+          state_state='focused', overlay=state_sheet()), note='NEW (client 21 Oct): all states and union territories, searchable; tap selects and closes')
+    frame(F, ID, N, 'Date-Under-18', s06_body(scroll=S, btn='primary', av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 2010',
+          dob_state='filled', langs=('Hindi',), state='Karnataka', state_state='filled'), note='Complete Setup → 06.1')
+    frame(F, ID, N, 'Languages-Limit', s06_body(scroll=S, btn='primary', av='done', nick='Aarav_22', nick_state='filled', dob='12 / 03 / 1998',
+          dob_state='filled', langs=('Hindi', 'English', 'Kannada', 'Tamil', 'Marathi'), limit=True, state='Karnataka', state_state='filled'))
+    frame(F, ID, N, 'Referral-Expanded', s06_body(scroll=515, btn='primary', ref='expanded', ref_state='focused', **full))
+    frame(F, ID, N, 'Referral-Error', s06_body(scroll=515, btn='primary', ref='error', ref_val='FRN12', ref_state='error', **full),
           note='Non-blocking; Launch accepts code without validation')
     frame(F, ID, N, 'Keyboard-Nickname', s06_body(scroll=200, kb='alpha', av='letter', nick='Aarav', nick_state='focused'))
-    frame(F, ID, N, 'Keyboard-Referral', s06_body(scroll=640, kb='alpha', btn='primary', ref='expanded', ref_val='FRN', ref_state='focused', **full))
-    frame(F, ID, N, 'Saving', s06_body(scroll=300, btn='primary-loading', **full))
-    frame(F, ID, N, 'Error', s06_body(scroll=300, btn='primary', msg='error', **full))
-    frame(F, ID, N, 'Offline', s06_body(scroll=300, btn='disabled', msg='offline', **full))
+    frame(F, ID, N, 'Keyboard-Referral', s06_body(scroll=775, kb='alpha', btn='primary', ref='expanded', ref_val='FRN', ref_state='focused', **full))
+    frame(F, ID, N, 'Saving', s06_body(scroll=S, btn='primary-loading', **full))
+    frame(F, ID, N, 'Error', s06_body(scroll=S, btn='primary', msg='error', **full))
+    frame(F, ID, N, 'Offline', s06_body(scroll=S, btn='disabled', msg='offline', **full))
+    # Host variant (client update 21 Oct: hosts give their age and state too, so 05 "Become a Host" now opens 06 before 07)
+    host = dict(host=True, av='done', nick='Priya', nick_state='filled', dob='04 / 08 / 2002', dob_state='filled', langs=('Hindi', 'English'),
+                state='Maharashtra', state_state='filled')
+    frame(F, ID, N, 'Host-Empty', s06_body(host=True),
+          note='NEW (client 21 Oct): hosts fill the same profile after 05, then Continue → 07. Under 18 → 06.1')
+    frame(F, ID, N, 'Host-Ready', s06_body(btn='primary', **host))
+    frame(F, ID, N, 'Host-Ready-Scrolled', s06_body(scroll=S, btn='primary', **host))
 
 
 # ============================================================ 06.1 Under-18 Blocked
@@ -359,7 +413,7 @@ def s05_body(sel=None, btn=None, msg=None):
                          'selected' if sel == 'u' else 'unselected', key='card:Explore as User', h=84))
     o.append(option_card(y + 96, 'Become a Host & Earn', 'Get verified and earn from your conversations.', icon_circle('crown', CTINT, CORAL),
                          'selected' if sel == 'h' else 'unselected', key='card:Become a Host & Earn', h=84))
-    nav = {'u': '06', 'h': '07'}.get(sel, '06 (User) / 07 (Host)')
+    nav = {'u': '06', 'h': '06 (host profile), then 07'}.get(sel, '06 (User) / 06 then 07 (Host)')
     c, _ = cta('Continue', btn or ('primary' if sel else 'disabled'), nav)
     o.append(c)
     o.append(topbar('back', nav_back='04 (locked state)', step=4))
@@ -405,21 +459,22 @@ def s12_body(overlay=None):
 def s06_body(scroll=0, btn='disabled', overlay=None, kb=None, msg=None, **kw):
     o = [blobs(bottom=False)]
     form, h = s06_form(**kw)
+    host = kw.get('host', False)
     y0 = 103
     if msg:
         b, bb = top_msg(msg, 107)
         o.append(b)
         y0 = bb + 4
-    label = 'Complete Setup'
+    label, nav = ('Continue', '07 Verification Method (under 18 → 06.1)') if host else ('Complete Setup', '06A Live Photo (under 18 → 06.1)')
     if kb:
-        c, top = cta(label, btn, '12 (under 18 → 06.1)', bottom=KB_TOP - 16)
+        c, top = cta(label, btn, nav, bottom=KB_TOP - 16)
         o.append(clip_group('c06', y0, top - 24, form, scroll))
         o.append(f'<rect x="0" y="{top - 24}" width="390" height="{KB_TOP - top + 24}" fill="{CREAM}"/>')
     else:
-        c, top = cta(label, btn, '12 (under 18 → 06.1)')
+        c, top = cta(label, btn, nav)
         o.append(clip_group('c06', y0, top - 24, form, scroll))
     o.append(c)
-    o.append(topbar('back', nav_back='04 or 05', step=5))
+    o.append(topbar('back', nav_back='05 (host)' if host else '04 or 05', step=5))
     o.append(status_bar())
     if kb:
         o.append(keyboard(kb))

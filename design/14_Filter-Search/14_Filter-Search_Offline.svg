@@ -21,8 +21,8 @@
 <g clip-path="url(#screen)">
 <rect width="390" height="844" fill="#FFF4D6"/>
 <!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->
-<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
-<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" class="cl-b1" opacity="0.50"/><ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" class="cl-b2" opacity="0.30"/></g><path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" class="cl-c1" opacity="0.35"/><ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" class="cl-c2" opacity="0.17"/></g><path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>
 <clipPath id="c13"><rect x="0" y="103" width="390" height="619"/></clipPath>
 <g clip-path="url(#c13)"><g transform="translate(0 0)">
 <!-- Search row (read-only) → 14 --><!-- Input (empty) -->
@@ -178,23 +178,23 @@
 <rect class="hit" data-hit="tab:Profile" x="284.5" y="750" width="89.5" height="68" fill="#FFFFFF" fill-opacity="0"/>
 <rect x="128" y="826" width="134" height="5" rx="2.5" fill="#10233F"/><!-- Scrim -->
 <rect x="0" y="0" width="390" height="844" fill="#10233F" opacity="0.32"/><rect class="hit" data-hit="scrim" x="0" y="0" width="390" height="844" fill="#FFFFFF" fill-opacity="0"/><!-- BottomSheet (frosted) -->
-<path d="M0 108 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFF4D6" filter="url(#sh-lg)"/>
-<path d="M0 108 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFFFFF" fill-opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
-<rect class="hit" data-hit="sheet" x="0" y="84" width="390" height="760" fill="#FFFFFF" fill-opacity="0"/>
-<rect x="175" y="92" width="40" height="4" rx="2" fill="#D8DDE5"/>
-<text x="24" y="129.2" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Search &amp; filters</text>
-<g transform="translate(342 106)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></g><rect class="hit" data-hit="close" x="330" y="94" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
+<path d="M0 526 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFF4D6" filter="url(#sh-lg)"/>
+<path d="M0 526 a24 24 0 0 1 24 -24 H366 a24 24 0 0 1 24 24 V844 H0 Z" fill="#FFFFFF" fill-opacity="0.72" stroke="#FFFFFF" stroke-width="1.2"/>
+<rect class="hit" data-hit="sheet" x="0" y="502" width="390" height="342" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="175" y="510" width="40" height="4" rx="2" fill="#D8DDE5"/>
+<text x="24" y="547.2" text-anchor="start" font-size="22" font-weight="700" fill="#10233F" letter-spacing="-0.2" xml:space="preserve">Search &amp; filters</text>
+<g transform="translate(342 524)" fill="none" stroke="#10233F" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></g><rect class="hit" data-hit="close" x="330" y="512" width="48" height="48" fill="#FFFFFF" fill-opacity="0"/>
 <!-- Input (empty) -->
-<rect x="24" y="154" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
-<g transform="translate(40 172.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
-<text x="72" y="188.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">Search by name or Host ID</text>
-<rect class="hit" data-hit="input:Search by name or Host ID" x="24" y="154" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
+<rect x="24" y="572" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
+<g transform="translate(40 590.0) scale(0.8333)" fill="none" stroke="#66758A" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+<text x="72" y="606.0" text-anchor="start" font-size="16" font-weight="400" fill="#9AA6B5" xml:space="preserve">Search by name or Host ID</text>
+<rect class="hit" data-hit="input:Search by name or Host ID" x="24" y="572" width="342" height="56" fill="#FFFFFF" fill-opacity="0"/>
 <!-- PersistentBanner (offline) -->
-<rect x="24" y="234" width="342" height="62" rx="16" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
-<rect x="24" y="234" width="342" height="62" rx="16" fill="#EAF0FF" opacity="0.7"/>
-<g transform="translate(40 255.0) scale(0.8333)" fill="none" stroke="#5B7CFA" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></g>
-<text x="72" y="259.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">You're offline. Check your connection and try</text>
-<text x="72" y="278.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">again.</text>
+<rect x="24" y="652" width="342" height="62" rx="16" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2"/>
+<rect x="24" y="652" width="342" height="62" rx="16" fill="#EAF0FF" opacity="0.7"/>
+<g transform="translate(40 673.0) scale(0.8333)" fill="none" stroke="#5B7CFA" stroke-width="2.40" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></g>
+<text x="72" y="677.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">You're offline. Check your connection and try</text>
+<text x="72" y="696.1" text-anchor="start" font-size="13" font-weight="400" fill="#10233F" xml:space="preserve">again.</text>
 <!-- Button secondary: "Try again" → retry -->
 <rect x="24" y="738" width="342" height="56" rx="28.0" fill="url(#g-glass)" stroke="url(#g-edge)" stroke-width="1.2" filter="url(#sh-card)"/>
 <text x="195.0" y="772" text-anchor="middle" font-size="16" font-weight="700" fill="#5B7CFA" xml:space="preserve">Try again</text>

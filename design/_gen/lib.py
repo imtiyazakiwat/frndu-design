@@ -368,19 +368,38 @@ def home_indicator(color=NAVY):
     return f'<rect x="128" y="826" width="134" height="5" rx="2.5" fill="{color}"/>'
 
 
+# Background clouds. Client update 21 Oct: stronger Blue (top right) and Coral (bottom left) than the 11 Oct theme.
+# Values are the opacity of each cloud's main shape; every other cloud shape is a fixed share of it (CLOUD_SHAPES).
+# The prototype's Background control (proto.py) overrides these live through the cl-* classes.
+CLOUD_DEFAULT = {'b': 0.50, 'c': 0.35}
+CLOUD_BEFORE = {'b': 0.30, 'c': 0.20}   # 11 Oct values: the prototype's "Before" preset
+CLOUD_SHAPES = {
+    'cl-b1': ('b', 1.0), 'cl-b2': ('b', 0.6),     # blobs(): main shape + soft ellipse
+    'cl-b3': ('b', 0.72), 'cl-b4': ('b', 0.54),   # 00.1 drawer panel, 16 profile sheet
+    'cl-c1': ('c', 1.0), 'cl-c2': ('c', 0.5),
+    'cl-c3': ('c', 0.7), 'cl-c4': ('c', 0.6),
+}
+
+
+def cloud(cls):
+    """class + opacity attributes for one background-cloud shape."""
+    k, share = CLOUD_SHAPES[cls]
+    return f'class="{cls}" opacity="{CLOUD_DEFAULT[k] * share:.2f}"'
+
+
 def blobs(top=True, bottom=True):
     """Frndu background: soft blurred colour clouds (Blue top-right, Coral bottom-left) with a fine highlight arc.
-    Built from design.md tokens at low opacity, blurred, so they dissolve into Cream.
+    Built from design.md tokens at reduced opacity, blurred, so they dissolve into Cream.
     Theme rule (11 Oct): every Cream screen shows both clouds, so the flags are ignored."""
     top = bottom = True
     out = ['<!-- Background clouds (decorative): blurred Blue top-right, Coral bottom-left -->']
     if top:
-        out.append('<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" opacity="0.30"/>'
-                   '<ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" opacity="0.18"/></g>'
+        out.append(f'<g filter="url(#blur-xl)"><path d="M210 -40 C200 40 240 96 286 120 C330 142 336 210 380 250 L460 260 L460 -40 Z" fill="#5B7CFA" {cloud("cl-b1")}/>'
+                   f'<ellipse cx="372" cy="70" rx="90" ry="110" fill="#5B7CFA" {cloud("cl-b2")}/></g>'
                    '<path d="M300 -10 C292 70 330 150 400 196" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.5"/>')
     if bottom:
-        out.append('<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" opacity="0.20"/>'
-                   '<ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" opacity="0.10"/></g>'
+        out.append(f'<g filter="url(#blur-xl)"><path d="M-60 560 C20 560 80 620 110 690 C130 740 170 800 200 900 L-60 900 Z" fill="#E94B4B" {cloud("cl-c1")}/>'
+                   f'<ellipse cx="0" cy="760" rx="110" ry="120" fill="#E94B4B" {cloud("cl-c2")}/></g>'
                    '<path d="M-10 640 C60 660 100 720 112 800" fill="none" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.5"/>')
     return '\n'.join(out)
 
@@ -391,8 +410,9 @@ def logo(cx, cy, size, cut=CREAM, sparks_on=False):
     return logo_mark(cx, cy, size, sparks_on=sparks_on)
 
 
-def progress(step, total=6):
-    """Step indicator centred in the top bar (PROPOSED new component from the reference)."""
+def progress(step, total=7):
+    """Step indicator centred in the top bar (PROPOSED new component from the reference).
+    7 steps since 21 Oct: hosts also fill 06 (phone, code, gender, role, profile, method, languages)."""
     w, g = 20, 6
     x0 = 195 - (total * w + (total - 1) * g) / 2
     out = [f'<!-- Step progress {step}/{total} -->']
@@ -802,6 +822,15 @@ def input_box(y, value=None, placeholder=None, state='empty', x=24, w=342, h=56,
     if state != 'disabled':
         out.append(hit(x, y, w, h, f'input:{placeholder or value or ""}'))
     return '\n'.join(out)
+
+
+def age_pill(xr, cy, age, muted=False):
+    """Read-only "Age 28" pill (right edge xr, centred on cy): the age worked out from the date of birth."""
+    lbl = f'Age {age}'
+    w = tw(lbl, 13, 600) + 20
+    return (f'<!-- Age pill (derived from date of birth) -->'
+            f'<rect x="{xr - w:.0f}" y="{cy - 13}" width="{w:.0f}" height="26" rx="13" fill="{CBORDER if muted else BTINT}"/>'
+            + t1(f'{xr - w / 2:.0f}', cy + 4.5, lbl, 13, 600, SLATE if muted else BLUE, 'middle'))
 
 
 def flag_in(x, y):
